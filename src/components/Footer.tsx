@@ -1,6 +1,9 @@
-import content from '@/data/content.json';
+'use client';
+
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Footer() {
+    const { content } = useLanguage();
     const { footer } = content;
     const year = new Date().getFullYear();
 

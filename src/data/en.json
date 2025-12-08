@@ -1,0 +1,58 @@
+{
+    "navbar": {
+        "about": "About",
+        "work": "Work",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Hi, I'm Davide Arcolini",
+        "subtitle": "Consultant at Liquid Reply, specializing in LLM integration and LLM Agent development. M.Sc. in Computer Engineering @ Politecnico di Torino.",
+        "dynamicText": [
+            "Welcome, I was waiting for you...",
+            "loading coffee.module...",
+            "Tracking your metadata in the cloud.",
+            "sudo make me a sandwich"
+        ],
+        "cta": "Learn more about me"
+    },
+    "about": {
+        "title": "About Me",
+        "description": [
+            "Hi! Nice to meet you. Here's a bit about me: I hold a Master of Science in Computer Engineering with a focus on cybersecurity from Politecnico di Torino, obtained in 2023. During my academic journey I developed a PRNG based on chaotic maps, contributed to CyberChallenge.IT and led project teams in collaboration with Aruba S.p.A.",
+            "Currently, I work at Liquid Reply as a Consultant focused on LLM integration in the infrastructure workflow and LLM Agent development."
+        ],
+        "cta": "See what I've built"
+    },
+    "work": {
+        "title": "Selected Work",
+        "projects": [
+            {
+                "title": "Master's Thesis",
+                "description": "Full-Lifecycle API Management – Microgateway Infrastructural Pattern adopting Kong Gateway."
+            },
+            {
+                "title": "PRNG based on chaotic maps",
+                "description": "PRNG design based on chaotic maps."
+            },
+            {
+                "title": "Personal digital portfolio",
+                "description": "Design & Dev of personal digital portfolio with modern JS + static hosting."
+            }
+        ],
+        "cta": "Get in touch"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "If you'd like to collaborate, chat or hire me — drop me a line:",
+        "email": "davidearcolini.dev@gmail.com",
+        "socials": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/dvdr00t"
+            }
+        ]
+    },
+    "footer": {
+        "copyright": "Davide Arcolini"
+    }
+}

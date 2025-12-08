@@ -2,19 +2,21 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Languages } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { clsx } from 'clsx';
-
-const navLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#work', label: 'Work' },
-    { href: '#contact', label: 'Contact' },
-];
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const { language, setLanguage, content } = useLanguage();
+
+    const navLinks = [
+        { href: '#about', label: content.navbar.about },
+        { href: '#work', label: content.navbar.work },
+        { href: '#contact', label: content.navbar.contact },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,6 +25,10 @@ export default function Navbar() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const toggleLanguage = () => {
+        setLanguage(language === 'en' ? 'it' : 'en');
+    };
 
     return (
         <nav
@@ -40,22 +46,40 @@ export default function Navbar() {
                 <div className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
                         <Link
-                            key={link.label}
+                            key={link.href}
                             href={link.href}
                             className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
                         >
                             {link.label}
                         </Link>
                     ))}
+
+                    <button
+                        onClick={toggleLanguage}
+                        className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all text-xs font-semibold uppercase tracking-wider text-slate-300"
+                        title="Switch Language"
+                    >
+                        <Languages className="w-3.5 h-3.5" />
+                        <span>{language}</span>
+                    </button>
                 </div>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden text-slate-300"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {isOpen ? <X /> : <Menu />}
-                </button>
+                {/* Mobile Menu Button & Language */}
+                <div className="md:hidden flex items-center gap-4">
+                    <button
+                        onClick={toggleLanguage}
+                        className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 transition-all text-xs font-semibold uppercase tracking-wider text-slate-300"
+                    >
+                        <span>{language}</span>
+                    </button>
+
+                    <button
+                        className="text-slate-300"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        {isOpen ? <X /> : <Menu />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Nav */}
@@ -70,7 +94,7 @@ export default function Navbar() {
                         <div className="flex flex-col p-6 space-y-4">
                             {navLinks.map((link) => (
                                 <Link
-                                    key={link.label}
+                                    key={link.href}
                                     href={link.href}
                                     className="text-lg font-medium text-slate-300 hover:text-white"
                                     onClick={() => setIsOpen(false)}

@@ -2,9 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { Mail, Github } from 'lucide-react';
-import content from '@/data/content.json';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Contact() {
+    const { content } = useLanguage();
     const { contact } = content;
 
     return (

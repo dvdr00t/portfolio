@@ -1,0 +1,58 @@
+{
+    "navbar": {
+        "about": "Chi Sono",
+        "work": "Progetti",
+        "contact": "Contatti"
+    },
+    "hero": {
+        "title": "Ciao, sono Davide Arcolini",
+        "subtitle": "Consulente presso Liquid Reply, specializzato in integrazione di LLM e sviluppo di LLM Agent. Laurea Magistrale in Ingegneria Informatica @ Politecnico di Torino.",
+        "dynamicText": [
+            "Benvenuto, ti stavamo aspettando...",
+            "loading coffee.module...",
+            "Tracciamento dei tuoi metadati nel cloud.",
+            "sudo make me a sandwich"
+        ],
+        "cta": "Scopri di più su di me"
+    },
+    "about": {
+        "title": "Chi Sono",
+        "description": [
+            "Ciao! Piacere di conoscerti. Ecco qualche informazione su di me: ho conseguito la Laurea Magistrale in Ingegneria Informatica con specializzazione in cybersecurity presso il Politecnico di Torino nel 2023. Durante il mio percorso accademico ho lavorato allo sviluppo di un PRNG basato su chaotics maps, partecipato al progetto CyberChallenge.IT e guidato team di progetto in collaborazione con Aruba S.p.A.",
+            "Attualmente lavoro in Liquid Reply come consulente focalizzato sull'integrazione di LLM nel workflow infrastrutturale delle aziende e sullo sviluppo di LLM Agent."
+        ],
+        "cta": "Guarda cosa ho costruito"
+    },
+    "work": {
+        "title": "Progetti Selezionati",
+        "projects": [
+            {
+                "title": "Tesi Magistrale",
+                "description": "Full-Lifecycle API Management – Pattern infrastrutturale Microgateway adottando Kong Gateway."
+            },
+            {
+                "title": "PRNG basato su mappe caotiche",
+                "description": "Progettazione di PRNG basato su mappe caotiche."
+            },
+            {
+                "title": "Portfolio digitale personale",
+                "description": "Design & Sviluppo di portfolio digitale personale con JS moderno + hosting statico."
+            }
+        ],
+        "cta": "Contattami"
+    },
+    "contact": {
+        "title": "Contatti",
+        "description": "Se vuoi collaborare, chiacchierare o assumermi — scrivimi:",
+        "email": "davidearcolini.dev@gmail.com",
+        "socials": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/dvdr00t"
+            }
+        ]
+    },
+    "footer": {
+        "copyright": "Davide Arcolini"
+    }
+}

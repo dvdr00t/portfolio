@@ -3,10 +3,11 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import content from '@/data/content.json';
 import TypewriterEffect from './TypewriterEffect';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Hero() {
+    const { content } = useLanguage();
     const { hero } = content;
 
     return (

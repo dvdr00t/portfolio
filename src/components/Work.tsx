@@ -3,9 +3,10 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import content from '@/data/content.json';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Work() {
+    const { content } = useLanguage();
     const { work } = content;
 
     return (
