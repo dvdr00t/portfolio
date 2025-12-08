@@ -27,16 +27,19 @@
         "title": "Progetti Selezionati",
         "projects": [
             {
-                "title": "Tesi Magistrale",
-                "description": "Full-Lifecycle API Management – Pattern infrastrutturale Microgateway adottando Kong Gateway."
+                "title": "Full-Lifecycle API Management",
+                "description": "Pattern infrastrutturale Microgateway adottando Kong Gateway.",
+                "url": "https://github.com/dvdr00t/Full-Lifecycle-API-Microgateway-Infrastructural-Pattern"
+            },
+            {
+                "title": "OS161 Shell",
+                "description": "Implementazione di una shell per il sistema operativo didattico OS161.",
+                "url": "https://github.com/dvdr00t/OS161-SHELL"
             },
             {
                 "title": "PRNG basato su mappe caotiche",
-                "description": "Progettazione di PRNG basato su mappe caotiche."
-            },
-            {
-                "title": "Portfolio digitale personale",
-                "description": "Design & Sviluppo di portfolio digitale personale con JS moderno + hosting statico."
+                "description": "Progettazione e implementazione di PRNG basato su mappe caotiche per applicazioni crittografiche.",
+                "url": "https://github.com/dvdr00t/PRNGs"
             }
         ],
         "cta": "Contattami"

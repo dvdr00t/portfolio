@@ -23,13 +23,16 @@ export default function Work() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {work.projects.map((project, index) => (
-                        <motion.div
+                        <motion.a
                             key={index}
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-slate-950 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/50 transition-colors group cursor-default"
+                            className="bg-slate-950 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/50 transition-colors group cursor-pointer block"
                         >
                             <div className="h-12 w-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-500/20 transition-colors">
                                 <ExternalLink className="w-6 h-6 text-blue-400" />
@@ -38,7 +41,7 @@ export default function Work() {
                             <p className="text-slate-400 leading-relaxed text-sm">
                                 {project.description}
                             </p>
-                        </motion.div>
+                        </motion.a>
                     ))}
                 </div>
 
