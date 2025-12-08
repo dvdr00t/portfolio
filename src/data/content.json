@@ -1,7 +1,13 @@
 {
     "hero": {
-        "title": "Hi, I’m Davide Arcolini",
+        "title": "Hi, I'm Davide Arcolini",
         "subtitle": "Consultant at Liquid Reply, specializing in LLM integration and application modernization. MSc in Computer Engineering (Politecnico di Torino).",
+        "dynamicText": [
+            "Welcome Elena, I was waiting for you...",
+            "Loading coffee.module...",
+            "Tracking your metadata in the cloud.",
+            "sudo make me a sandwich"
+        ],
         "cta": "Learn more about me"
     },
     "about": {

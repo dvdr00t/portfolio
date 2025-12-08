@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import content from '@/data/content.json';
+import TypewriterEffect from './TypewriterEffect';
 
 export default function Hero() {
     const { hero } = content;
@@ -30,10 +31,19 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+                    className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-6 leading-relaxed"
                 >
                     {hero.subtitle}
                 </motion.p>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    className="mb-10 h-8"
+                >
+                    <TypewriterEffect words={hero.dynamicText} />
+                </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
