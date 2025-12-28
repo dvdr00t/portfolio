@@ -6,7 +6,7 @@
     },
     "hero": {
         "title": "Hi, I'm Davide Arcolini",
-        "subtitle": "Consultant at Liquid Reply, specializing in LLM integration and LLM Agent development. M.Sc. in Computer Engineering @ Politecnico di Torino.",
+        "subtitle": "Consultant at Liquid Reply, specialized in LLM integration and LLM Agent development. Master of Science in Computer Engineering @ Politecnico di Torino.",
         "dynamicText": [
             "Welcome, I was waiting for you...",
             "loading coffee.module...",
