@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, Languages } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { clsx } from 'clsx';
@@ -38,8 +39,18 @@ export default function Navbar() {
             )}
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
-                <Link href="/" className="text-xl font-bold font-outfit text-white tracking-tight">
-                    Davide Arcolini
+                <Link href="/" className="flex items-center gap-3 group">
+                    <div className="relative w-8 h-8 rounded-full overflow-hidden border border-slate-700/50 group-hover:border-slate-500 transition-colors">
+                        <Image
+                            src="/profile.png"
+                            alt="Davide Arcolini"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <span className="text-xl font-bold font-outfit text-white tracking-tight group-hover:text-slate-200 transition-colors">
+                        Davide Arcolini
+                    </span>
                 </Link>
 
                 {/* Desktop Nav */}
