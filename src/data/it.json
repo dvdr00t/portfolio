@@ -59,54 +59,208 @@
         "title": "Esperienza e Istruzione",
         "items": [
             {
-                "id": 1,
-                "title": "Consulente",
-                "organization": "Liquid Reply",
-                "date": "2023 - Presente",
-                "description": "Specializzato nell'integrazione di LLM nei flussi di lavoro infrastrutturali e nello sviluppo di Agenti LLM. Tecnologie Kubernetes e Cloud Native.",
-                "icon": "work"
+                "id": "1",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "1-1",
+                        "organization": "Liquid Reply",
+                        "icon": "work",
+                        "roles": [
+                            {
+                                "title": "Consulente IT",
+                                "date": "Dicembre 2023 - Presente",
+                                "description": "Sviluppo di LLM Agent e integrazione di LLM all'interno dei processi di modernizzazione delle applicazioni.",
+                                "skills": [
+                                    "Large Language Models (LLM)",
+                                    "Intelligenza Artificiale (IA)",
+                                    "Kubernetes",
+                                    "Cloud Native"
+                                ]
+                            },
+                            {
+                                "title": "Studente Tesista Magistrale",
+                                "date": "Aprile 2023 - Dicembre 2023",
+                                "description": "Durante il mio tirocinio presso Liquid Reply (IT), ho avuto l'opportunità di lavorare su un progetto di tesi all'avanguardia incentrato sulla sicurezza delle API e sul Microgateway Infrastructural Pattern adottando Kong API Gateway.",
+                                "skills": [
+                                    "Postman",
+                                    "Keycloak",
+                                    "Kong Gateway",
+                                    "Sicurezza API"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 2,
-                "title": "Laurea Magistrale in Ingegneria Informatica",
-                "organization": "Politecnico di Torino",
-                "date": "2020 - 2023",
-                "description": "Durante la Laurea Magistrale, ho partecipato al CyberChallenge.IT, piazzandomi tra i migliori 20 studenti partecipanti nel 2021. Come team leader di Challenge@PoliTo con Aruba S.p.A., io e il mio team abbiamo sviluppato metodologie di accesso passwordless basate su FIDO 2.0. Ho partecipato a BIP CyberSec Talent Week e alle competizioni IEEE Eurocon 2023. Le mie competenze tecniche includono soluzioni IAM con Keycloak e OPA, con automazione su Kubernetes tramite strumenti CI/CD sviluppati durante la mia tesi come stagista presso Liquid Reply. Oltre alla tecnologia, ho dedicato oltre 230 ore come assistente alla didattica, incarnando i principi IEEE-HKN come membro e giovane professionista. Ho organizzato eventi e guidato il Mu Nu Chapter al Politecnico, dimostrando leadership e attitudine.",
-                "icon": "university",
-                "grade": "110/110"
+                "id": "1-bis",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "1-bis-1",
+                        "organization": "Mu Nu Chapter of IEEE-Eta Kappa Nu",
+                        "icon": "university",
+                        "roles": [
+                            {
+                                "title": "Advisor di Logistica e Fundraising",
+                                "date": "Ottobre 2023 - Presente",
+                                "description": "In qualità di Advisor per Logistica e Fundraising presso Mu Nu, fornisco guida strategica e tutoraggio al team di leadership del Mu Nu Chapter. In questo ruolo, assisto nella pianificazione e coordinamento di hackathon, talk, conferenze e affronto questioni interfunzionali.",
+                                "skills": [
+                                    "Comunicazione",
+                                    "Public Speaking",
+                                    "Mentoring"
+                                ]
+                            },
+                            {
+                                "title": "Responsabile Logistica e Fundraising",
+                                "date": "Marzo 2023 - Settembre 2023",
+                                "description": "Il Responsabile Logistica e Fundraising presso Mu Nu supervisiona il coordinamento di hackathon, talk, conferenze e affronta tutte le questioni interfunzionali.",
+                                "skills": [
+                                    "Pianificazione Progetti",
+                                    "Leadership di Team"
+                                ]
+                            },
+                            {
+                                "title": "Membro dell'Area Tutoring",
+                                "date": "Ott 2022 - Mar 2023",
+                                "description": "Tutor del corso di Algoritmi e Strutture Dati per IEEE-HKN Mu Nu presso il Politecnico di Torino.",
+                                "skills": [
+                                    "Strutture Dati",
+                                    "Insegnamento"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 3,
-                "title": "Team Leader al Challenge@PoliTo by Firms - Diventa Passwordless",
-                "organization": "Aruba S.p.A.",
-                "date": "Marzo 2023 - Luglio 2023",
-                "description": "Come studente per il programma Aruba Academy, ho sviluppato e integrato metodologie di accesso per applicazioni mobile, desktop e web basate sugli standard passwordless creati dalla FIDO Alliance e dal World Wide Web Consortium (W3C).",
-                "icon": "university"
+                "id": "2",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "2-1",
+                        "organization": "Aruba S.p.A.",
+                        "icon": "university",
+                        "roles": [
+                            {
+                                "title": "Team Leader al Challenge@PoliTo by Firms - Diventa Passwordless",
+                                "date": "Marzo 2023 - Luglio 2023",
+                                "description": "Come studente per il programma Aruba Academy, ho sviluppato e integrato metodologie di accesso per applicazioni mobile, desktop e web basate sugli standard passwordless creati dalla FIDO Alliance e dal World Wide Web Consortium (W3C).",
+                                "skills": [
+                                    "FIDO 2.0",
+                                    "WebAuthn",
+                                    "Mobile Security",
+                                    "Team Leadership"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 4,
-                "title": "Laurea Triennale in Ingegneria Informatica",
-                "organization": "Politecnico di Torino",
-                "date": "Settembre 2018 - Luglio 2021",
-                "description": "Durante la mia Laurea Triennale, ho studiato le basi di Informatica, Fisica e Telecomunicazioni. Inoltre, ho lavorato a un breve progetto di tesi intitolato “PRNGs based on Logistic Chaotic Maps and Generalized Lorentz Systems”.",
-                "icon": "university",
-                "grade": "101/110"
+                "id": "3",
+                "type": "parallel",
+                "items": [
+                    {
+                        "id": "3-1",
+                        "organization": "Politecnico di Torino",
+                        "icon": "university",
+                        "roles": [
+                            {
+                                "title": "Laurea Magistrale in Ingegneria Informatica",
+                                "date": "Ottobre 2021 - Dicembre 2023",
+                                "description": "Durante la Laurea Magistrale, ho partecipato al CyberChallenge.IT, piazzandomi tra i migliori 20 studenti partecipanti nel 2021. Come team leader di Challenge@PoliTo con Aruba S.p.A., io e il mio team abbiamo sviluppato metodologie di accesso passwordless basate su FIDO 2.0. Ho partecipato a BIP CyberSec Talent Week e alle competizioni IEEE Eurocon 2023. Le mie competenze tecniche includono soluzioni IAM con Keycloak e OPA, con automazione su Kubernetes tramite strumenti CI/CD sviluppati durante la mia tesi come stagista presso Liquid Reply. Oltre alla tecnologia, ho dedicato oltre 230 ore come assistente alla didattica, incarnando i principi IEEE-HKN come membro e giovane professionista. Ho organizzato eventi e guidato il Mu Nu Chapter al Politecnico, dimostrando leadership e attitudine.",
+                                "grade": "110/110",
+                                "skills": [
+                                    "Cybersecurity",
+                                    "Keycloak",
+                                    "OPA",
+                                    "CI/CD",
+                                    "IEEE-HKN"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3-2",
+                        "organization": "Politecnico di Torino",
+                        "icon": "notebook",
+                        "roles": [
+                            {
+                                "title": "Collaboratore alla Didattica",
+                                "date": "Set 2022 - Mar 2023",
+                                "description": "Collaborazione Part-Time con il Politecnico di Torino nell'assistenza alle attività didattiche di due corsi del primo anno di Ingegneria Informatica (14BHDLZ) e Algoritmi e Strutture Dati (03AAXOA).",
+                                "skills": [
+                                    "Problem Solving",
+                                    "Python (Linguaggio di Programmazione)",
+                                    "Insegnamento",
+                                    "Algoritmi",
+                                    "Strutture Dati"
+                                ]
+                            },
+                            {
+                                "title": "Collaboratore alla Didattica",
+                                "date": "Ott 2021 - Set 2022",
+                                "description": "Collaborazione Part-Time con il Politecnico di Torino nell'assistenza alle attività didattiche del corso del primo anno di Ingegneria Informatica (14BHDLZ).",
+                                "skills": [
+                                    "Problem Solving",
+                                    "Python (Linguaggio di Programmazione)",
+                                    "Insegnamento"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 5,
-                "title": "White Hacker al CyberChallenge.IT",
-                "organization": "Cybersecurity National Lab (CNL)",
-                "date": "Marzo 2022 - Luglio 2022",
-                "description": "CyberChallenge.IT è il programma di formazione sulla sicurezza per giovani talenti tra i 16 e i 24 anni, la principale iniziativa italiana per identificare, attrarre, reclutare e collocare la prossima generazione di professionisti della sicurezza informatica.",
-                "icon": "code"
+                "id": "4",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "4-1",
+                        "organization": "Cybersecurity National Lab (CNL)",
+                        "icon": "code",
+                        "roles": [
+                            {
+                                "title": "White Hacker al CyberChallenge.IT",
+                                "date": "Marzo 2022 - Luglio 2022",
+                                "description": "CyberChallenge.IT è il programma di formazione sulla sicurezza per giovani talenti tra i 16 e i 24 anni, la principale iniziativa italiana per identificare, attrarre, reclutare e collocare la prossima generazione di professionisti della sicurezza informatica.",
+                                "skills": [
+                                    "Ethical Hacking",
+                                    "CTF",
+                                    "Binary Exploitation",
+                                    "Web Security"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 6,
-                "title": "Assistente alla Didattica Part-Time",
-                "organization": "Politecnico di Torino",
-                "date": "Ottobre 2021 - Marzo 2023",
-                "description": "Collaborazione Part-Time con il Politecnico di Torino nell'assistenza alle attività didattiche dei corsi del primo anno di Ingegneria Informatica (14BHDLZ) e Algoritmi e Strutture Dati (03AAXOA).",
-                "icon": "notebook"
+                "id": "5",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "5-1",
+                        "organization": "Politecnico di Torino",
+                        "icon": "university",
+                        "roles": [
+                            {
+                                "title": "Laurea Triennale in Ingegneria Informatica",
+                                "date": "Settembre 2018 - Luglio 2021",
+                                "description": "Durante la mia Laurea Triennale, ho studiato le basi di Informatica, Fisica e Telecomunicazioni. Inoltre, ho lavorato a un breve progetto di tesi intitolato “PRNGs based on Logistic Chaotic Maps and Generalized Lorentz Systems”.",
+                                "grade": "101/110",
+                                "skills": [
+                                    "Informatica",
+                                    "Fisica",
+                                    "Matematica",
+                                    "Teoria del Caos"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

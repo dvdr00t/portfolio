@@ -59,54 +59,208 @@
         "title": "Experience & Education",
         "items": [
             {
-                "id": 1,
-                "title": "Consultant",
-                "organization": "Liquid Reply",
-                "date": "2023 - Present",
-                "description": "Specialized in LLM integration in infrastructure workflows and LLM Agent development. Kubernetes & Cloud Native technologies.",
-                "icon": "work"
+                "id": "1",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "1-1",
+                        "organization": "Liquid Reply",
+                        "icon": "work",
+                        "roles": [
+                            {
+                                "title": "IT Consultant",
+                                "date": "December 2023 - Present",
+                                "description": "Developing LLM Agents and integrating LLMs within the application modernization processes.",
+                                "skills": [
+                                    "Large Language Models (LLM)",
+                                    "Langchain/Langgraph",
+                                    "Chainlit",
+                                    "OpenAI"
+                                ]
+                            },
+                            {
+                                "title": "Student Intern for M.Sc. Thesis",
+                                "date": "April 2023 - December 2023",
+                                "description": "During my internship at Liquid Reply (IT), I had the opportunity to work on a cutting-edge thesis project focused on API security and the Microgateway Infrastructural Pattern adopting Kong API Gateway.",
+                                "skills": [
+                                    "Postman",
+                                    "Keycloak",
+                                    "Kong Gateway",
+                                    "API Security"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 2,
-                "title": "Master of Science in Computer Engineering",
-                "organization": "Politecnico di Torino",
-                "date": "October 2021 - December 2023",
-                "description": "During my Master of Science, I've competed in the CyberChallenge.IT, ranking top among 20 students in participating at the program in 2021. As a team leader at Challenge@PoliTo with Aruba S.p.A, me and my team developed password-less access methodologies using FIDO 2.0. I've participated in BIP CyberSec Talent Week and IEEE Eurocon 2023 competitions. My technical expertise includes IAM solutions using Keycloak and OPA, with automation on Kubernetes using CI/CD tools that I developed working on my thesis as an intern Liquid Reply. Beyond tech, I've dedicated 230+ hours as a teaching assistant, embodying IEEE-HKN principles as a member and young professional. I've organized events and led the Mu Nu Chapter at Politecnico, showcasing leadership, character, and attitude.",
-                "icon": "university",
-                "grade": "110/110"
+                "id": "1-bis",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "1-bis-1",
+                        "organization": "Mu Nu Chapter of IEEE-Eta Kappa Nu",
+                        "icon": "university",
+                        "roles": [
+                            {
+                                "title": "Advisor of Logistics and Fundraising",
+                                "date": "October 2023 - Present",
+                                "description": "As an Advisor for Logistics and Fundraising at Mu Nu, I provide strategic guidance and mentorship to the chapter's leadership team. In this role, I assist in planning and coordinating hackathons, talks, conferences, and address cross-functional matters.",
+                                "skills": [
+                                    "Communication",
+                                    "Public Speaking",
+                                    "Mentoring"
+                                ]
+                            },
+                            {
+                                "title": "Head of Logistics and Fundraising",
+                                "date": "March 2023 - September 2023",
+                                "description": "The Head of Logistics and Fundraising at Mu Nu oversees the coordination of hackathons, talks, conferences, and addresses all the cross-functional matters.",
+                                "skills": [
+                                    "Project Planning",
+                                    "Team Leadership"
+                                ]
+                            },
+                            {
+                                "title": "Member of Tutoring Area",
+                                "date": "October 2022 - March 2023",
+                                "description": "Tutor of the Algorithms and Data Structures course for IEEE-HKN Mu Nu Chapter @ Politecnico di Torino.",
+                                "skills": [
+                                    "Data Structures",
+                                    "Teaching"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 3,
-                "title": "Team Leader at Challenge@PoliTo by Firms - Become Passwordless",
-                "organization": "Aruba S.p.A.",
-                "date": "March 2023 - July 2023",
-                "description": "As student for the Aruba Academy program, I developed and integrated mobile, desktop and web application access methodologies based on common passwordless access standards created by the FIDO Alliance and the World Wide Web Consortium (W3C).",
-                "icon": "university"
+                "id": "2",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "2-1",
+                        "organization": "Aruba S.p.A.",
+                        "icon": "university",
+                        "roles": [
+                            {
+                                "title": "Team Leader at Challenge@PoliTo by Firms - Become Passwordless",
+                                "date": "March 2023 - July 2023",
+                                "description": "As student for the Aruba Academy program, I developed and integrated mobile, desktop and web application access methodologies based on common passwordless access standards created by the FIDO Alliance and the World Wide Web Consortium (W3C).",
+                                "skills": [
+                                    "FIDO 2.0",
+                                    "WebAuthn",
+                                    "Mobile Security",
+                                    "Team Leadership"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 4,
-                "title": "Bachelor of Science in Computer Engineering",
-                "organization": "Politecnico di Torino",
-                "date": "September 2018 - July 2021",
-                "description": "During my Bachelor of Science, I studied the basics of Computer Science, Physics and Telecommunications. Moreover, I worked on a short thesis project named “PRNGs based on Logistic Chaotic Maps and Generalized Lorentz Systems”.",
-                "icon": "university",
-                "grade": "101/110"
+                "id": "3",
+                "type": "parallel",
+                "items": [
+                    {
+                        "id": "3-1",
+                        "organization": "Politecnico di Torino",
+                        "icon": "university",
+                        "roles": [
+                            {
+                                "title": "Master of Science in Computer Engineering",
+                                "date": "October 2021 - December 2023",
+                                "description": "During my Master of Science, I've competed in the CyberChallenge.IT, ranking top among 20 students in participating at the program in 2021. As a team leader at Challenge@PoliTo with Aruba S.p.A, me and my team developed password-less access methodologies using FIDO 2.0. I've participated in BIP CyberSec Talent Week and IEEE Eurocon 2023 competitions. My technical expertise includes IAM solutions using Keycloak and OPA, with automation on Kubernetes using CI/CD tools that I developed working on my thesis as an intern Liquid Reply. Beyond tech, I've dedicated 230+ hours as a teaching assistant, embodying IEEE-HKN principles as a member and young professional. I've organized events and led the Mu Nu Chapter at Politecnico, showcasing leadership, character, and attitude.",
+                                "grade": "110/110",
+                                "skills": [
+                                    "Cybersecurity",
+                                    "Keycloak",
+                                    "OPA",
+                                    "CI/CD",
+                                    "IEEE-HKN"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3-2",
+                        "organization": "Politecnico di Torino",
+                        "icon": "notebook",
+                        "roles": [
+                            {
+                                "title": "Teaching Assistant",
+                                "date": "September 2022 - March 2023",
+                                "description": "Part-Time collaboration with Politecnico di Torino in assisting teaching activities of two Bachelor's first-year courses Computer Science (14BHDLZ) and Algorithms and Data Structures (03AAXOA).",
+                                "skills": [
+                                    "Problem Solving",
+                                    "Python (Programming Language)",
+                                    "Teaching",
+                                    "Algorithms",
+                                    "Data Structures"
+                                ]
+                            },
+                            {
+                                "title": "Teaching Assistant",
+                                "date": "October 2021 - September 2022",
+                                "description": "Part-Time collaboration with Politecnico di Torino in assisting teaching activities of the Bachelor's first-year courses Computer Science (14BHDLZ).",
+                                "skills": [
+                                    "Problem Solving",
+                                    "Python (Programming Language)",
+                                    "Teaching"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 5,
-                "title": "White Hacker at CyberChallenge.IT",
-                "organization": "Cybersecurity National Lab (CNL)",
-                "date": "March 2022 - July 2022",
-                "description": "CyberChallenge.IT is the security training program for young talents between 16 and 24, the main Italian initiative to identify, attract, recruit and place the next generation of cybersecurity professionals.",
-                "icon": "code"
+                "id": "4",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "4-1",
+                        "organization": "Cybersecurity National Lab (CNL)",
+                        "icon": "code",
+                        "roles": [
+                            {
+                                "title": "White Hacker at CyberChallenge.IT",
+                                "date": "March 2022 - July 2022",
+                                "description": "CyberChallenge.IT is the security training program for young talents between 16 and 24, the main Italian initiative to identify, attract, recruit and place the next generation of cybersecurity professionals.",
+                                "skills": [
+                                    "Ethical Hacking",
+                                    "CTF",
+                                    "Binary Exploitation",
+                                    "Web Security"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "id": 6,
-                "title": "Part-Time Teaching Assistant",
-                "organization": "Politecnico di Torino",
-                "date": "October 2021 - March 2023",
-                "description": "Part-Time collaboration with Politecnico di Torino in assisting teaching activities of the Bachelor's first-year courses Computer Science (14BHDLZ) and Algorithms and Data Structures (03AAXOA).",
-                "icon": "notebook"
+                "id": "5",
+                "type": "row",
+                "items": [
+                    {
+                        "id": "5-1",
+                        "organization": "Politecnico di Torino",
+                        "icon": "university",
+                        "roles": [
+                            {
+                                "title": "Bachelor of Science in Computer Engineering",
+                                "date": "September 2018 - July 2021",
+                                "description": "During my Bachelor of Science, I studied the basics of Computer Science, Physics and Telecommunications. Moreover, I worked on a short thesis project named “PRNGs based on Logistic Chaotic Maps and Generalized Lorentz Systems”.",
+                                "grade": "101/110",
+                                "skills": [
+                                    "Computer Science",
+                                    "Physics",
+                                    "Math",
+                                    "Chaos Theory"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
