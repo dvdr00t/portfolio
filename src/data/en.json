@@ -18,8 +18,8 @@
     "about": {
         "title": "About Me",
         "description": [
-            "Hi! Nice to meet you. Here's a bit about me: I hold a Master of Science in Computer Engineering with a focus on cybersecurity from Politecnico di Torino, obtained in 2023. During my academic journey I developed a PRNG based on chaotic maps, contributed to CyberChallenge.IT and led project teams in collaboration with Aruba S.p.A.",
-            "Currently, I work at Liquid Reply as a Consultant focused on LLM integration in the infrastructure workflow and LLM Agent development."
+            "Hi! My name is **Davide Arcolini**, but you can call me `dvdr00t` 🤓!",
+            "As a Consultant at [**Liquid Reply**](https://www.reply.com/liquid-reply/en/) specializing in **LLM integration for application modernization**, I hold a Master of Science in **Computer Engineering** with a focus on cybersecurity from [**Politecnico di Torino**](https://www.polito.it/), Italy, earned in 2023, and a Bachelor's degree from the same institution obtained in 2021. During my academic journey, I delved into cybersecurity, engaging in projects such as developing a PRNG based on chaotic maps and participating in [**CyberChallenge.IT program**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), ranking among the top 20 students. Additionally, I led teams in projects like [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) with [**Aruba S.p.A**](https://www.aruba.it/academy.aspx) and participated in various cyber-related conferences and competitions, including [**BIP CyberSec Talent Week**](https://www.vgen.it/it/bip-cybersec-talent-week/) and [**IEEE Eurocon 2023 B.Sc. and M.Sc. Student Competition**](https://2023.ieee-eurocon.org/). My master's thesis, \"Full-Lifecycle API Management: Microgateway Infrastructural Pattern adopting Kong Gateway\", was completed during my internship at Liquid Reply, where I focused on IAM solutions and automated API development on Kubernetes. I've also been active in [**IEEE-HKN's Mu Nu Chapter**](https://hknpolito.org/), serving as a Tutor and later as Head of Logistics and Fundraising, organizing events and dedicating over 230 hours as a teaching assistant at Politecnico, where I found fulfillment in simplifying complex concepts for others."
         ],
         "cta": "See what I've built"
     },
@@ -65,6 +65,7 @@
                     {
                         "id": "1-1",
                         "organization": "Liquid Reply",
+                        "url": "https://liquidreply.net/en/",
                         "icon": "work",
                         "roles": [
                             {
@@ -100,6 +101,7 @@
                     {
                         "id": "1-bis-1",
                         "organization": "Mu Nu Chapter of IEEE-Eta Kappa Nu",
+                        "url": "https://hknpolito.org/",
                         "icon": "university",
                         "roles": [
                             {
@@ -110,6 +112,12 @@
                                     "Communication",
                                     "Public Speaking",
                                     "Mentoring"
+                                ],
+                                "links": [
+                                    {
+                                        "label": "Mu Nu Chapter",
+                                        "url": "#"
+                                    }
                                 ]
                             },
                             {
@@ -141,6 +149,7 @@
                     {
                         "id": "2-1",
                         "organization": "Aruba S.p.A.",
+                        "url": "https://www.aruba.it/academy.aspx",
                         "icon": "university",
                         "roles": [
                             {
@@ -165,6 +174,7 @@
                     {
                         "id": "3-1",
                         "organization": "Politecnico di Torino",
+                        "url": "https://www.polito.it/",
                         "icon": "university",
                         "roles": [
                             {
@@ -178,6 +188,24 @@
                                     "OPA",
                                     "CI/CD",
                                     "IEEE-HKN"
+                                ],
+                                "links": [
+                                    {
+                                        "label": "Master's Thesis",
+                                        "url": "#"
+                                    }
+                                ],
+                                "badges": [
+                                    {
+                                        "name": "CyberChallenge.IT",
+                                        "imageUrl": "/cybersecnatlab_logo.jpg",
+                                        "linkUrl": "https://openbadges.bestr.it/public/assertions/rLlb917mQk-v6w0rGCpO8Q"
+                                    },
+                                    {
+                                        "name": "Challenge@PoliTo",
+                                        "imageUrl": "/politecnico_di_torino_logo.jpg",
+                                        "linkUrl": "https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw"
+                                    }
                                 ]
                             }
                         ]
@@ -220,6 +248,7 @@
                     {
                         "id": "4-1",
                         "organization": "Cybersecurity National Lab (CNL)",
+                        "url": "https://cybersecnatlab.it/",
                         "icon": "code",
                         "roles": [
                             {
@@ -244,6 +273,7 @@
                     {
                         "id": "5-1",
                         "organization": "Politecnico di Torino",
+                        "url": "https://www.polito.it/",
                         "icon": "university",
                         "roles": [
                             {
@@ -261,6 +291,35 @@
                         ]
                     }
                 ]
+            }
+        ]
+    },
+    "badges": {
+        "title": "Certifications & Awards",
+        "items": [
+            {
+                "name": "CyberChallenge.IT",
+                "imageUrl": "/cybersecnatlab_logo.jpg",
+                "linkUrl": "https://openbadges.bestr.it/public/assertions/rLlb917mQk-v6w0rGCpO8Q",
+                "description": "Advanced cybersecurity training program."
+            },
+            {
+                "name": "Challenge@PoliTo",
+                "imageUrl": "/politecnico_di_torino_logo.jpg",
+                "linkUrl": "https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw",
+                "description": "Innovation challenge by Firms - Become Passwordless."
+            },
+            {
+                "name": "BIP CyberSec Talent Week",
+                "imageUrl": "/vgen_logo.jpg",
+                "linkUrl": "",
+                "description": "8th Position ranking."
+            },
+            {
+                "name": "IELTS Academic 7.5",
+                "imageUrl": "/ielts_official_logo.jpg",
+                "linkUrl": "",
+                "description": "English proficiency certification."
             }
         ]
     },

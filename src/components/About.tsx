@@ -17,7 +17,7 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="max-w-4xl mx-auto"
+                    className="max-w-5xl mx-auto"
                 >
                     <h2 className="text-3xl md:text-5xl font-bold font-outfit mb-12 text-center">
                         {about.title}
@@ -25,7 +25,47 @@ export default function About() {
 
                     <div className="space-y-8 text-lg text-slate-300 leading-relaxed bg-slate-900/50 p-8 md:p-12 rounded-2xl border border-slate-800">
                         {about.description.map((paragraph, index) => (
-                            <p key={index}>{paragraph}</p>
+                            <p key={index}>
+                                {paragraph.split(/(\[.*?\]\(.*?\))/g).map((part, i) => {
+                                    const match = part.match(/\[(.*?)\]\((.*?)\)/);
+                                    if (match) {
+                                        const [, text, url] = match;
+                                        // Handle bold text inside links: remove ** wrap if present
+                                        const cleanText = text.replace(/\*\*/g, '');
+                                        const isBold = text.includes('**');
+
+                                        return (
+                                            <Link
+                                                key={i}
+                                                href={url}
+                                                target="_blank"
+                                                className={`text-blue-400 hover:text-blue-300 transition-colors ${isBold ? 'font-bold' : ''}`}
+                                            >
+                                                {cleanText}
+                                            </Link>
+                                        );
+                                    }
+
+                                    // Handle standalone bold text
+                                    return part.split(/(\*\*.*?\*\*)/g).map((subPart, j) => {
+                                        if (subPart.startsWith('**') && subPart.endsWith('**')) {
+                                            return <strong key={j} className="font-bold text-slate-100">{subPart.slice(2, -2)}</strong>;
+                                        }
+
+                                        // Handle code blocks (backticks)
+                                        return subPart.split(/(`.*?`)/g).map((codePart, k) => {
+                                            if (codePart.startsWith('`') && codePart.endsWith('`')) {
+                                                return (
+                                                    <code key={k} className="font-mono text-blue-400 bg-slate-800/50 px-1.5 py-0.5 rounded text-sm border border-slate-700/50">
+                                                        {codePart.slice(1, -1)}
+                                                    </code>
+                                                );
+                                            }
+                                            return codePart;
+                                        });
+                                    });
+                                })}
+                            </p>
                         ))}
 
                         <div className="pt-4">

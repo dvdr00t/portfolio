@@ -3,7 +3,9 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import { Briefcase, GraduationCap, Code, Globe, Award, Calendar, NotebookText } from 'lucide-react';
+import { Briefcase, GraduationCap, Code, Globe, Award, Calendar, NotebookText, ExternalLink, Link as LinkIcon } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const iconMap: { [key: string]: any } = {
     work: Briefcase,
@@ -108,7 +110,18 @@ function CurriculumCard({ item, side }: { item: any, side: "left" | "right" }) {
                 {/* Organization Header */}
                 <div className="flex items-center gap-3 text-slate-100 mb-6 font-medium text-xl border-b border-slate-800 pb-4">
                     <Icon className="w-6 h-6 text-blue-400" />
-                    {item.organization}
+                    {item.url ? (
+                        <Link
+                            href={item.url}
+                            target="_blank"
+                            className="hover:text-blue-400 transition-colors flex items-center gap-2 group/link"
+                        >
+                            {item.organization}
+                            <ExternalLink className="w-4 h-4 opacity-0 group-hover/link:opacity-100 transition-opacity" />
+                        </Link>
+                    ) : (
+                        item.organization
+                    )}
                 </div>
 
                 {/* Nested Roles */}
@@ -143,13 +156,56 @@ function CurriculumCard({ item, side }: { item: any, side: "left" | "right" }) {
                             </p>
 
                             {/* Skills Tags */}
-                            {role.skills && (
-                                <div className="flex flex-wrap gap-2">
-                                    {role.skills.map((skill: string, i: number) => (
-                                        <span key={i} className="text-xs font-medium text-slate-300 bg-slate-800/50 px-2.5 py-1 rounded-full border border-slate-700/50 hover:border-blue-500/30 transition-colors cursor-default">
-                                            {skill}
-                                        </span>
-                                    ))}
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {role.skills && role.skills.map((skill: string, i: number) => (
+                                    <span key={i} className="text-xs font-medium text-slate-300 bg-slate-800/50 px-2.5 py-1 rounded-full border border-slate-700/50 hover:border-blue-500/30 transition-colors cursor-default">
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+
+                            {/* Links & Badges */}
+                            {(role.links || role.badges) && (
+                                <div className="flex flex-col gap-3 mt-4 pt-4 border-t border-slate-800/50">
+                                    {/* Links */}
+                                    {role.links && role.links.length > 0 && (
+                                        <div className="flex flex-wrap gap-4">
+                                            {role.links.map((link: any, i: number) => (
+                                                <Link
+                                                    key={i}
+                                                    href={link.url}
+                                                    target="_blank"
+                                                    className="flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition-colors"
+                                                >
+                                                    <LinkIcon className="w-3 h-3" />
+                                                    {link.label}
+                                                    <ExternalLink className="w-3 h-3 opacity-50" />
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    )}
+
+                                    {/* Badges/Awards */}
+                                    {role.badges && role.badges.length > 0 && (
+                                        <div className="flex flex-wrap gap-2">
+                                            {role.badges.map((badge: any, i: number) => (
+                                                <Link
+                                                    key={i}
+                                                    href={badge.linkUrl}
+                                                    target="_blank"
+                                                    title={badge.name}
+                                                    className="relative w-10 h-10 rounded-lg overflow-hidden border border-slate-700 hover:border-blue-500 transition-colors group/badge bg-white"
+                                                >
+                                                    <Image
+                                                        src={badge.imageUrl}
+                                                        alt={badge.name}
+                                                        fill
+                                                        className="object-contain p-1"
+                                                    />
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
                             )}
                         </div>
