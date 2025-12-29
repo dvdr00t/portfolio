@@ -71,7 +71,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="order-1 md:order-2 flex justify-center md:justify-end"
                 >
-                    <div className="relative w-40 h-40 sm:w-52 sm:h-52 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                    <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-96 lg:h-96">
                         {/* Decorative Circle */}
                         <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-2xl animate-pulse" />
 
