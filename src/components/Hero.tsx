@@ -24,7 +24,7 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1 className="text-5xl md:text-7xl font-bold font-outfit mb-6 tracking-tight">
+                        <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold font-outfit mb-4 md:mb-6 tracking-tight">
                             <span className="text-gradient drop-shadow-lg">
                                 {hero.title.replace("Hi, I’m ", "Hi, I'm\n")}
                             </span>
@@ -35,7 +35,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto md:mx-0 mb-6 leading-relaxed"
+                        className="text-sm sm:text-base md:text-xl text-slate-400 max-w-2xl mx-auto md:mx-0 mb-4 md:mb-6 leading-relaxed"
                     >
                         {hero.subtitle}
                     </motion.p>
@@ -44,7 +44,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
-                        className="mb-10 h-8 flex justify-center md:justify-start"
+                        className="mb-6 md:mb-10 h-6 md:h-8 flex justify-center md:justify-start text-sm md:text-base"
                     >
                         <TypewriterEffect words={hero.dynamicText} />
                     </motion.div>
@@ -56,7 +56,7 @@ export default function Hero() {
                     >
                         <Link
                             href="#about"
-                            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-950 rounded-full font-semibold hover:bg-slate-200 transition-colors duration-300 group"
+                            className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-white text-slate-950 rounded-full font-semibold text-sm md:text-base hover:bg-slate-200 transition-colors duration-300 group"
                         >
                             {hero.cta}
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -71,12 +71,12 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="order-1 md:order-2 flex justify-center md:justify-end"
                 >
-                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                    <div className="relative w-40 h-40 sm:w-52 sm:h-52 md:w-80 md:h-80 lg:w-96 lg:h-96">
                         {/* Decorative Circle */}
                         <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-2xl animate-pulse" />
 
                         <motion.div
-                            animate={{ y: [0, -20, 0] }}
+                            animate={{ y: [0, -10, 0] }}
                             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                             className="relative w-full h-full rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl"
                         >
@@ -93,9 +93,9 @@ export default function Hero() {
                         <motion.div
                             animate={{ y: [0, 15, 0], rotate: [0, 10, 0] }}
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                            className="absolute -bottom-4 -right-4 w-16 h-16 bg-slate-900 rounded-2xl border border-slate-800 flex items-center justify-center shadow-xl"
+                            className="absolute -bottom-2 -right-2 md:-bottom-4 md:-right-4 w-10 h-10 md:w-16 md:h-16 bg-slate-900 rounded-xl md:rounded-2xl border border-slate-800 flex items-center justify-center shadow-xl"
                         >
-                            <span className="text-3xl">🚀</span>
+                            <span className="text-xl md:text-3xl">🚀</span>
                         </motion.div>
                     </div>
                 </motion.div>
