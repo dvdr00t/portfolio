@@ -16,6 +16,9 @@ export default function Navbar() {
     const navLinks = [
         { href: '#about', label: content.navbar.about },
         { href: '#work', label: content.navbar.work },
+        { href: '#curriculum', label: content.navbar.curriculum },
+        { href: '#badges', label: content.navbar.badges },
+        { href: '#conferences', label: content.navbar.conferences },
         { href: '#contact', label: content.navbar.contact },
     ];
 

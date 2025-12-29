@@ -2,6 +2,9 @@
     "navbar": {
         "about": "About",
         "work": "Work",
+        "curriculum": "Curriculum",
+        "badges": "Badges",
+        "conferences": "Conferences",
         "contact": "Contact"
     },
     "hero": {
@@ -19,9 +22,12 @@
         "title": "About Me",
         "description": [
             "Hi! My name is **Davide Arcolini**, but you can call me `dvdr00t` 🤓!",
-            "As a Consultant at [**Liquid Reply**](https://www.reply.com/liquid-reply/en/) specializing in **LLM integration for application modernization**, I hold a Master of Science in **Computer Engineering** with a focus on cybersecurity from [**Politecnico di Torino**](https://www.polito.it/), Italy, earned in 2023, and a Bachelor's degree from the same institution obtained in 2021. During my academic journey, I delved into cybersecurity, engaging in projects such as developing a PRNG based on chaotic maps and participating in [**CyberChallenge.IT program**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), ranking among the top 20 students. Additionally, I led teams in projects like [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) with [**Aruba S.p.A**](https://www.aruba.it/academy.aspx) and participated in various cyber-related conferences and competitions, including [**BIP CyberSec Talent Week**](https://www.vgen.it/it/bip-cybersec-talent-week/) and [**IEEE Eurocon 2023 B.Sc. and M.Sc. Student Competition**](https://2023.ieee-eurocon.org/). My master's thesis, \"Full-Lifecycle API Management: Microgateway Infrastructural Pattern adopting Kong Gateway\", was completed during my internship at Liquid Reply, where I focused on IAM solutions and automated API development on Kubernetes. I've also been active in [**IEEE-HKN's Mu Nu Chapter**](https://hknpolito.org/), serving as a Tutor and later as Head of Logistics and Fundraising, organizing events and dedicating over 230 hours as a teaching assistant at Politecnico, where I found fulfillment in simplifying complex concepts for others."
+            "I'm a Consultant at [**Liquid Reply**](https://www.reply.com/liquid-reply/en/) specialized in **LLM integration for application modernization**. I hold a Master of Science in **Computer Engineering** with a focus on cybersecurity from [**Politecnico di Torino**](https://www.polito.it/). Passionate about security, I've participated in programs like [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), led the [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) with [**Aruba S.p.A**](https://www.aruba.it/academy.aspx), and contributed as a member of [**IEEE-HKN's Mu Nu Chapter**](https://hknpolito.org/)."
         ],
-        "cta": "See what I've built"
+        "cta": "See what I've built",
+        "ctaCurriculum": "See my curriculum",
+        "ctaBadges": "See my badges",
+        "ctaConferences": "See my conferences"
     },
     "work": {
         "title": "Selected Work",
@@ -320,6 +326,24 @@
                 "imageUrl": "/ielts_official_logo.jpg",
                 "linkUrl": "",
                 "description": "English proficiency certification."
+            }
+        ]
+    },
+    "conferences": {
+        "title": "Conferences & Talks",
+        "subtitle": "Presentations and masterclasses held with IEEE-HKN Mu Nu Chapter at Politecnico di Torino.",
+        "items": [
+            {
+                "title": "Git: from Zero to Hero - Tips and best practices for team collaboration",
+                "description": "Working in a team is not easy, we know. But it's often necessary, so it's important to do it right, with the right tools.",
+                "url": "https://www.youtube.com/watch?v=RixznWyCjEc",
+                "organization": "IEEE-HKN Mu Nu Chapter & Politecnico di Torino"
+            },
+            {
+                "title": "Writing scientific reports: techniques and strategies for effective communication",
+                "description": "The event will illustrate best practices for organizing information and communicating effectively through reports.",
+                "url": "https://www.youtube.com/watch?v=oAMvHd8ZcBs",
+                "organization": "IEEE-HKN Mu Nu Chapter & Politecnico di Torino"
             }
         ]
     },

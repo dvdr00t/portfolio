@@ -2,6 +2,9 @@
     "navbar": {
         "about": "Chi Sono",
         "work": "Progetti",
+        "curriculum": "Curriculum",
+        "badges": "Certificazioni",
+        "conferences": "Conferenze",
         "contact": "Contatti"
     },
     "hero": {
@@ -19,9 +22,12 @@
         "title": "Chi Sono",
         "description": [
             "Ciao! Mi chiamo **Davide Arcolini**, ma puoi chiamarmi `dvdr00t` 🤓!",
-            "Come Consulente presso [**Liquid Reply**](https://www.reply.com/liquid-reply/it/) specializzato nell'**integrazione di LLM per la modernizzazione delle applicazioni**, ho conseguito la Laurea Magistrale in **Ingegneria Informatica** con specializzazione in cybersecurity presso il [**Politecnico di Torino**](https://www.polito.it/), conseguita nel 2023, e la Laurea Triennale presso la stessa istituzione nel 2021. Durante il mio percorso accademico, ho approfondito la cybersecurity, impegnandomi in progetti come lo sviluppo di un PRNG basato su mappe caotiche e partecipando al programma [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), classificandomi tra i primi 20 studenti. Inoltre, ho guidato team in progetti come [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) con [**Aruba S.p.A**](https://www.aruba.it/academy.aspx) e partecipato a varie conferenze e competizioni legate alla sicurezza informatica, tra cui [**BIP CyberSec Talent Week**](https://www.vgen.it/it/bip-cybersec-talent-week/) e [**IEEE Eurocon 2023 B.Sc. and M.Sc. Student Competition**](https://2023.ieee-eurocon.org/). La mia tesi magistrale, \"Full-Lifecycle API Management: Microgateway Infrastructural Pattern adopting Kong Gateway\", è stata completata durante il mio tirocinio presso Liquid Reply, dove mi sono concentrato sulle soluzioni IAM e sullo sviluppo automatizzato di API su Kubernetes. Sono stato anche attivo nel [**Mu Nu Chapter di IEEE-HKN**](https://hknpolito.org/), servendo come Tutor e successivamente come Responsabile Logistica e Fundraising, organizzando eventi e dedicando oltre 230 ore come assistente alla didattica al Politecnico, dove ho trovato soddisfazione nel semplificare concetti complessi per gli altri."
+            "Sono un Consulente presso [**Liquid Reply**](https://www.reply.com/liquid-reply/it/) specializzato nell'**integrazione di LLM per la modernizzazione delle applicazioni**. Ho conseguito la Laurea Magistrale in **Ingegneria Informatica** con specializzazione in cybersecurity presso il [**Politecnico di Torino**](https://www.polito.it/). Appassionato di sicurezza informatica, ho partecipato a programmi come [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), guidato il progetto [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) con [**Aruba S.p.A**](https://www.aruba.it/academy.aspx), e contribuito come membro del [**Mu Nu Chapter di IEEE-HKN**](https://hknpolito.org/)."
         ],
-        "cta": "Guarda cosa ho costruito"
+        "cta": "Guarda cosa ho costruito",
+        "ctaCurriculum": "Vedi il mio curriculum",
+        "ctaBadges": "Vedi le mie certificazioni",
+        "ctaConferences": "Vedi le mie conferenze"
     },
     "work": {
         "title": "Progetti Selezionati",
@@ -320,6 +326,24 @@
                 "imageUrl": "/ielts_official_logo.jpg",
                 "linkUrl": "",
                 "description": "Certificazione di competenza inglese."
+            }
+        ]
+    },
+    "conferences": {
+        "title": "Conferenze e Talk",
+        "subtitle": "Presentazioni e masterclass tenute con IEEE-HKN Mu Nu Chapter presso il Politecnico di Torino.",
+        "items": [
+            {
+                "title": "Git: from Zero to Hero - Consigli e pratiche ottimali per lavorare in team",
+                "description": "Lavorare in team non è facile, lo sappiamo. Ma spesso è necessario, perciò è importante farlo nel modo giusto, con gli strumenti giusti.",
+                "url": "https://www.youtube.com/watch?v=RixznWyCjEc",
+                "organization": "IEEE-HKN Mu Nu Chapter & Politecnico di Torino"
+            },
+            {
+                "title": "Scrivere report scientifici: tecniche e strategie per una comunicazione efficace",
+                "description": "Durante l'evento si illustreranno le migliori pratiche per organizzare le informazioni e comunicare efficacemente attraverso i report.",
+                "url": "https://www.youtube.com/watch?v=oAMvHd8ZcBs",
+                "organization": "IEEE-HKN Mu Nu Chapter & Politecnico di Torino"
             }
         ]
     },

@@ -68,12 +68,33 @@ export default function About() {
                             </p>
                         ))}
 
-                        <div className="pt-4">
+                        <div className="pt-4 flex flex-wrap gap-4 sm:gap-6">
                             <Link
                                 href="#work"
                                 className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors group"
                             >
                                 {about.cta}
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </Link>
+                            <Link
+                                href="#curriculum"
+                                className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors group"
+                            >
+                                {about.ctaCurriculum}
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </Link>
+                            <Link
+                                href="#badges"
+                                className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors group"
+                            >
+                                {about.ctaBadges}
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </Link>
+                            <Link
+                                href="#conferences"
+                                className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors group"
+                            >
+                                {about.ctaConferences}
                                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Link>
                         </div>
