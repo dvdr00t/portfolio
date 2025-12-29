@@ -55,7 +55,7 @@ export default function Curriculum() {
                                 <div key={row.id} className={`relative flex flex-col md:flex-row gap-8 ${isParallel ? 'md:items-start' : ''}`}>
 
                                     {/* Left Side */}
-                                    <div className={`md:w-1/2 ${isParallel
+                                    <div className={`md:w-1/2 pl-12 md:pl-0 ${isParallel
                                         ? 'md:pr-12'
                                         : rowIndex % 2 === 0
                                             ? 'md:pr-12 md:text-right'
