@@ -19,6 +19,11 @@ export default function Curriculum() {
     const { content } = useLanguage();
     const { curriculum } = content;
     const containerRef = useRef<HTMLDivElement>(null);
+    // A single reading path is clearer than the former alternating layout. Some
+    // entries contain two simultaneous roles, which now become consecutive cards.
+    const timelineItems = [...curriculum.items]
+        .sort((a: any, b: any) => Number(a.id) - Number(b.id))
+        .flatMap((row: any) => row.items);
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start end", "end start"]
@@ -40,54 +45,25 @@ export default function Curriculum() {
                     {curriculum.title}
                 </motion.h2>
 
-                <div className="relative max-w-6xl mx-auto">
-                    {/* Vertical Line */}
-                    <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-px bg-slate-800 transform md:-translate-x-1/2">
+                <div className="relative max-w-5xl mx-auto">
+                    {/* A single left rail keeps every experience easy to scan. */}
+                    <div className="absolute left-[15px] sm:left-5 top-0 bottom-0 w-px bg-slate-800">
                         <motion.div
                             style={{ scaleY: scrollYProgress, transformOrigin: "top" }}
                             className="absolute top-0 left-0 w-full h-full bg-blue-500/50"
                         />
                     </div>
 
-                    <div className="space-y-8 md:space-y-16">
-                        {curriculum.items.map((row: any, rowIndex: number) => {
-                            const isParallel = row.type === 'parallel';
-
-                            return (
-                                <div key={row.id} className={`relative flex flex-col md:flex-row gap-8 ${isParallel ? 'md:items-start' : ''}`}>
-
-                                    {/* Left Side */}
-                                    <div className={`md:w-1/2 pl-12 md:pl-0 ${isParallel
-                                        ? 'md:pr-12'
-                                        : rowIndex % 2 === 0
-                                            ? 'md:pr-12 md:text-right'
-                                            : 'hidden md:block'
-                                        }`}>
-                                        {((isParallel && row.items[0]) || (rowIndex % 2 === 0 && row.items[0])) && (
-                                            <CurriculumCard item={row.items[0]} side="left" />
-                                        )}
-                                    </div>
-
-                                    {/* Timeline Node (Center) */}
-                                    <div className="absolute left-[20px] md:left-1/2 w-8 h-8 rounded-full bg-slate-950 border-2 border-blue-500 transform -translate-x-1/2 z-10 shadow-[0_0_10px_rgba(59,130,246,0.5)] flex items-center justify-center mt-6">
-                                        <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-                                    </div>
-
-                                    {/* Right Side */}
-                                    <div className={`md:w-1/2 pl-12 md:pl-12 ${isParallel
-                                        ? ''
-                                        : rowIndex % 2 !== 0
-                                            ? ''
-                                            : 'hidden md:block'
-                                        }`}>
-                                        {((isParallel && row.items[1]) || (rowIndex % 2 !== 0 && row.items[0])) && (
-                                            <CurriculumCard item={isParallel ? row.items[1] : row.items[0]} side="right" />
-                                        )}
-                                    </div>
-
+                    <div className="space-y-8 md:space-y-10">
+                        {timelineItems.map((item: any, index: number) => (
+                            <div key={`${item.organization}-${index}`} className="relative pl-10 sm:pl-14">
+                                {/* Timeline node */}
+                                <div className="absolute left-[15px] sm:left-5 top-7 h-7 w-7 -translate-x-1/2 rounded-full border-2 border-blue-500 bg-slate-950 shadow-[0_0_10px_rgba(59,130,246,0.35)] flex items-center justify-center z-10">
+                                    <div className="h-2 w-2 rounded-full bg-blue-400" />
                                 </div>
-                            );
-                        })}
+                                <CurriculumCard item={item} />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -95,17 +71,17 @@ export default function Curriculum() {
     );
 }
 
-function CurriculumCard({ item, side }: { item: any, side: "left" | "right" }) {
+function CurriculumCard({ item }: { item: any }) {
     const Icon = iconMap[item.icon] || iconMap.default;
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
         >
-            <div className="group relative bg-slate-900/40 backdrop-blur-sm border border-slate-800 p-8 rounded-2xl hover:border-blue-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/5">
+            <div className="group relative bg-slate-900/40 backdrop-blur-sm border border-slate-800 p-6 sm:p-8 rounded-2xl hover:border-blue-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/5">
 
                 {/* Organization Header */}
                 <div className="flex items-center gap-3 text-slate-100 mb-6 font-medium text-xl border-b border-slate-800 pb-4">

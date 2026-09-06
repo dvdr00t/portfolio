@@ -3,15 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, Languages } from 'lucide-react';
+import { Menu, X, Languages, Moon, Sun, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { clsx } from 'clsx';
 import { useLanguage } from '@/context/LanguageContext';
+import { useTheme } from '@/context/ThemeContext';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const { language, setLanguage, content } = useLanguage();
+    const { theme, toggleTheme } = useTheme();
 
     const navLinks = [
         { href: '#about', label: content.navbar.about },
@@ -42,24 +44,34 @@ export default function Navbar() {
             )}
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
-                <Link href="/" className="flex items-center gap-3 group">
-                    <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-slate-700/50 group-hover:border-slate-500 transition-colors shrink-0">
-                        <Image
-                            src="/profile.png"
-                            alt="Davide Arcolini"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-                    <div className="flex flex-col">
-                        <span className="text-base sm:text-lg font-bold font-outfit text-white tracking-tight group-hover:text-slate-200 transition-colors leading-tight">
-                            Davide Arcolini
-                        </span>
-                        <span className="text-xs font-medium text-slate-400 group-hover:text-blue-400 transition-colors">
-                            {content.navbar.subtitle}
-                        </span>
-                    </div>
-                </Link>
+                <div className="flex items-center gap-3 sm:gap-4">
+                    <Link href="/" className="flex items-center gap-3 group">
+                        <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-slate-700/50 group-hover:border-slate-500 transition-colors shrink-0">
+                            <Image
+                                src="/profile.png"
+                                alt="Davide Arcolini"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                        <div className="hidden sm:flex flex-col">
+                            <span className="text-base sm:text-lg font-bold font-outfit text-white tracking-tight group-hover:text-slate-200 transition-colors leading-tight">
+                                Davide Arcolini
+                            </span>
+                            <span className="text-xs font-medium text-slate-400 group-hover:text-blue-400 transition-colors">
+                                {content.navbar.subtitle}
+                            </span>
+                        </div>
+                    </Link>
+                    <span
+                        aria-disabled="true"
+                        title={content.navbar.cvUnavailable}
+                        className="hidden lg:flex items-center gap-1.5 rounded-full border border-slate-700/70 bg-slate-800/50 px-3 py-1.5 text-xs font-semibold text-slate-400 cursor-not-allowed"
+                    >
+                        <Download className="h-3.5 w-3.5" />
+                        {content.navbar.cv}
+                    </span>
+                </div>
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center space-x-8">
@@ -81,6 +93,14 @@ export default function Navbar() {
                         <Languages className="w-3.5 h-3.5" />
                         <span>{language}</span>
                     </button>
+                    <button
+                        onClick={toggleTheme}
+                        className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-slate-800/50 text-slate-300 transition-all hover:border-slate-600 hover:bg-slate-800"
+                        title={theme === 'dark' ? content.navbar.lightMode : content.navbar.darkMode}
+                        aria-label={theme === 'dark' ? content.navbar.lightMode : content.navbar.darkMode}
+                    >
+                        {theme === 'dark' ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
+                    </button>
                 </div>
 
                 {/* Mobile Menu Button & Language */}
@@ -90,6 +110,14 @@ export default function Navbar() {
                         className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 transition-all text-xs font-semibold uppercase tracking-wider text-slate-300"
                     >
                         <span>{language}</span>
+                    </button>
+                    <button
+                        onClick={toggleTheme}
+                        className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-slate-800/50 text-slate-300 transition-all"
+                        title={theme === 'dark' ? content.navbar.lightMode : content.navbar.darkMode}
+                        aria-label={theme === 'dark' ? content.navbar.lightMode : content.navbar.darkMode}
+                    >
+                        {theme === 'dark' ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
                     </button>
 
                     <button
@@ -111,6 +139,14 @@ export default function Navbar() {
                         className="md:hidden bg-slate-950/95 backdrop-blur-lg border-b border-slate-800"
                     >
                         <div className="flex flex-col p-6 space-y-4">
+                            <span
+                                aria-disabled="true"
+                                title={content.navbar.cvUnavailable}
+                                className="flex w-fit items-center gap-2 rounded-full border border-slate-700/70 bg-slate-800/50 px-3 py-2 text-sm font-semibold text-slate-400 cursor-not-allowed"
+                            >
+                                <Download className="h-4 w-4" />
+                                {content.navbar.cv}
+                            </span>
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}

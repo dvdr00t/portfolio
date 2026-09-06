@@ -2,11 +2,15 @@
     "navbar": {
         "subtitle": "AI Engineer",
         "about": "Chi Sono",
-        "work": "Progetti",
         "curriculum": "Curriculum",
-        "badges": "Certificazioni",
         "conferences": "Conferenze",
-        "contact": "Contatti"
+        "work": "Progetti",
+        "badges": "Certificazioni",
+        "contact": "Contatti",
+        "cv": "CV",
+        "cvUnavailable": "Il mio CV sarà disponibile qui a breve.",
+        "lightMode": "Passa alla modalità chiara",
+        "darkMode": "Passa alla modalità scura"
     },
     "hero": {
         "title": "Ciao, sono Davide Arcolini",
@@ -34,7 +38,7 @@
         "ctaConferences": "Vedi le mie conferenze"
     },
     "work": {
-        "title": "Progetti Selezionati",
+        "title": "Progetti",
         "projects": [
             {
                 "title": "Full-Lifecycle API Management",
@@ -109,20 +113,22 @@
                         "icon": "work",
                         "roles": [
                             {
-                                "title": "Consulente IT",
-                                "date": "Dicembre 2023 - Presente",
-                                "description": "Sviluppo di LLM Agent e integrazione di LLM all'interno dei processi di modernizzazione delle applicazioni.",
-                                "skills": [
-                                    "Large Language Models (LLM)",
-                                    "Intelligenza Artificiale (IA)",
-                                    "Kubernetes",
-                                    "Cloud Native"
+              "title": "AI Engineer e Consulente IT",
+              "date": "Dicembre 2023 - Presente",
+              "description": "Progettazione, sviluppo e deployment in produzione di Sistemi Multi-Agente, pipeline RAG e integrazioni MCP. Focalizzato sull'ottimizzazione e la scalabilità degli LLM.",
+              "skills": [
+                "Large Language Models (LLM)",
+                "Langchain/Langgraph",
+                "Sistemi Multi-Agente",
+                "Retrieval-Augmented Generation (RAG)",
+                "Integrazione MCP",
+                "Python"
                                 ]
                             },
                             {
                                 "title": "Studente Tesista Magistrale",
                                 "date": "Aprile 2023 - Dicembre 2023",
-                                "description": "Durante il mio tirocinio presso Liquid Reply (IT), ho avuto l'opportunità di lavorare su un progetto di tesi all'avanguardia incentrato sulla sicurezza delle API e sul Microgateway Infrastructural Pattern adottando Kong API Gateway.",
+              "description": "Ho lavorato a un progetto di tesi all'avanguardia incentrato sulla sicurezza delle API e sul Microgateway Infrastructural Pattern adottando Kong API Gateway.",
                                 "skills": [
                                     "Postman",
                                     "Keycloak",
@@ -135,11 +141,11 @@
                 ]
             },
             {
-                "id": "1-bis",
+      "id": "3",
                 "type": "row",
                 "items": [
                     {
-                        "id": "1-bis-1",
+          "id": "3-1",
                         "organization": "Mu Nu Chapter of IEEE-Eta Kappa Nu",
                         "url": "https://hknpolito.org/",
                         "icon": "university",
@@ -156,7 +162,7 @@
                                 "links": [
                                     {
                                         "label": "Mu Nu Chapter",
-                                        "url": "#"
+                  "url": "https://hknpolito.org/"
                                     }
                                 ]
                             },
@@ -183,7 +189,7 @@
                 ]
             },
             {
-                "id": "2",
+      "id": "4",
                 "type": "row",
                 "items": [
                     {
@@ -208,31 +214,32 @@
                 ]
             },
             {
-                "id": "3",
+      "id": "2",
                 "type": "parallel",
                 "items": [
                     {
-                        "id": "3-1",
+          "id": "2-1",
                         "organization": "Politecnico di Torino",
                         "url": "https://www.polito.it/",
                         "icon": "university",
                         "roles": [
                             {
-                                "title": "Laurea Magistrale in Ingegneria Informatica",
+              "title": "Laurea Magistrale in Ingegneria Informatica (Cybersecurity)",
                                 "date": "Ottobre 2021 - Dicembre 2023",
-                                "description": "Durante la Laurea Magistrale, ho partecipato al CyberChallenge.IT, piazzandomi tra i migliori 20 studenti partecipanti nel 2021. Come team leader di Challenge@PoliTo con Aruba S.p.A., io e il mio team abbiamo sviluppato metodologie di accesso passwordless basate su FIDO 2.0. Ho partecipato a BIP CyberSec Talent Week e alle competizioni IEEE Eurocon 2023. Le mie competenze tecniche includono soluzioni IAM con Keycloak e OPA, con automazione su Kubernetes tramite strumenti CI/CD sviluppati durante la mia tesi come stagista presso Liquid Reply. Oltre alla tecnologia, ho dedicato oltre 230 ore come assistente alla didattica, incarnando i principi IEEE-HKN come membro e giovane professionista. Ho organizzato eventi e guidato il Mu Nu Chapter al Politecnico, dimostrando leadership e attitudine.",
+              "description": "Durante la Laurea Magistrale, ho partecipato a CyberChallenge.IT, classificandomi tra i migliori 20 studenti del programma 2021. Come team leader di Challenge@PoliTo con Aruba S.p.A., ho lavorato con il mio team allo sviluppo di metodologie di accesso passwordless basate su FIDO 2.0. Ho inoltre partecipato alle competizioni BIP CyberSec Talent Week e IEEE Eurocon 2023. Oltre alla tecnologia, ho dedicato oltre 230 ore all'attività di collaboratore alla didattica e ho incarnato i principi IEEE-HKN come membro e giovane professionista. Ho organizzato e presentato eventi tech guidando la sezione Logistica del Mu Nu Chapter al Politecnico di Torino, dimostrando leadership, carattere e attitudine.",
                                 "grade": "110/110",
                                 "skills": [
                                     "Cybersecurity",
-                                    "Keycloak",
-                                    "OPA",
-                                    "CI/CD",
-                                    "IEEE-HKN"
+                "Crittografia",
+                "OPA",
+                "OAuth 2.0",
+                "FIDO 2.0",
+                "CTF"
                                 ],
                                 "links": [
                                     {
-                                        "label": "Tesi Magisrale",
-                                        "url": "#"
+                  "label": "Tesi Magistrale",
+                  "url": "https://github.com/dvdr00t/Full-Lifecycle-API-Microgateway-Infrastructural-Pattern"
                                     }
                                 ],
                                 "badges": [
@@ -251,17 +258,17 @@
                         ]
                     },
                     {
-                        "id": "3-2",
+          "id": "2-2",
                         "organization": "Politecnico di Torino",
                         "icon": "notebook",
                         "roles": [
                             {
                                 "title": "Collaboratore alla Didattica",
-                                "date": "Set 2022 - Mar 2023",
+              "date": "Settembre 2022 - Marzo 2023",
                                 "description": "Collaborazione Part-Time con il Politecnico di Torino nell'assistenza alle attività didattiche di due corsi del primo anno di Ingegneria Informatica (14BHDLZ) e Algoritmi e Strutture Dati (03AAXOA).",
                                 "skills": [
                                     "Problem Solving",
-                                    "Python (Linguaggio di Programmazione)",
+                "Python",
                                     "Insegnamento",
                                     "Algoritmi",
                                     "Strutture Dati"
@@ -269,11 +276,11 @@
                             },
                             {
                                 "title": "Collaboratore alla Didattica",
-                                "date": "Ott 2021 - Set 2022",
+              "date": "Ottobre 2021 - Settembre 2022",
                                 "description": "Collaborazione Part-Time con il Politecnico di Torino nell'assistenza alle attività didattiche del corso del primo anno di Ingegneria Informatica (14BHDLZ).",
                                 "skills": [
                                     "Problem Solving",
-                                    "Python (Linguaggio di Programmazione)",
+                "Python",
                                     "Insegnamento"
                                 ]
                             }
@@ -282,7 +289,7 @@
                 ]
             },
             {
-                "id": "4",
+      "id": "5",
                 "type": "row",
                 "items": [
                     {
@@ -307,7 +314,7 @@
                 ]
             },
             {
-                "id": "5",
+      "id": "6",
                 "type": "row",
                 "items": [
                     {
@@ -321,12 +328,18 @@
                                 "date": "Settembre 2018 - Luglio 2021",
                                 "description": "Durante la mia Laurea Triennale, ho studiato le basi di Informatica, Fisica e Telecomunicazioni. Inoltre, ho lavorato a un breve progetto di tesi intitolato “PRNGs based on Logistic Chaotic Maps and Generalized Lorentz Systems”.",
                                 "grade": "101/110",
-                                "skills": [
-                                    "Informatica",
-                                    "Fisica",
-                                    "Matematica",
-                                    "Teoria del Caos"
-                                ]
+              "skills": [
+                "Informatica",
+                "Fisica",
+                "Matematica",
+                "Teoria del Caos"
+              ],
+              "links": [
+                {
+                  "label": "Tesi Triennale",
+                  "url": "https://github.com/dvdr00t/PRNGs"
+                }
+              ]
                             }
                         ]
                     }

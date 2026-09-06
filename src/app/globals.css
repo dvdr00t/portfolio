@@ -6,7 +6,44 @@
   body {
     @apply bg-slate-950 text-slate-200;
   }
+
+  html.light body {
+    @apply bg-slate-50 text-slate-800;
+  }
 }
+
+/* The portfolio uses dark-first Tailwind utilities. These targeted overrides retain
+   the existing visual hierarchy while giving the theme switch a complete light mode. */
+html.light .bg-slate-950 { background-color: rgb(248 250 252); }
+html.light .bg-slate-950\/30 { background-color: rgb(248 250 252 / .7); }
+html.light .bg-slate-950\/70 { background-color: rgb(248 250 252 / .85); }
+html.light .bg-slate-950\/80 { background-color: rgb(248 250 252 / .9); }
+html.light .bg-slate-950\/90,
+html.light .bg-slate-950\/95 { background-color: rgb(248 250 252 / .96); }
+html.light .bg-slate-900 { background-color: rgb(255 255 255); }
+html.light .bg-slate-900\/20 { background-color: rgb(255 255 255 / .55); }
+html.light .bg-slate-900\/40,
+html.light .bg-slate-900\/50,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/85 { background-color: rgb(255 255 255 / .9); }
+html.light .bg-slate-800,
+html.light .bg-slate-800\/40,
+html.light .bg-slate-800\/50,
+html.light .bg-slate-800\/80 { background-color: rgb(241 245 249 / .9); }
+html.light .text-white,
+html.light .text-slate-100,
+html.light .text-slate-200 { color: rgb(15 23 42); }
+html.light .text-slate-300 { color: rgb(51 65 85); }
+html.light .text-slate-400 { color: rgb(71 85 105); }
+html.light .text-slate-500 { color: rgb(100 116 139); }
+html.light .border-slate-800,
+html.light .border-slate-800\/50,
+html.light .border-slate-800\/60 { border-color: rgb(203 213 225); }
+html.light .border-slate-700,
+html.light .border-slate-700\/40,
+html.light .border-slate-700\/50,
+html.light .border-slate-700\/60 { border-color: rgb(203 213 225); }
 
 @layer utilities {
   .text-gradient {
