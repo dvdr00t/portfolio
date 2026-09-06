@@ -43,7 +43,7 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-3 group">
-                    <div className="relative w-8 h-8 rounded-full overflow-hidden border border-slate-700/50 group-hover:border-slate-500 transition-colors">
+                    <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-slate-700/50 group-hover:border-slate-500 transition-colors shrink-0">
                         <Image
                             src="/profile.png"
                             alt="Davide Arcolini"
@@ -51,9 +51,14 @@ export default function Navbar() {
                             className="object-cover"
                         />
                     </div>
-                    <span className="text-xl font-bold font-outfit text-white tracking-tight group-hover:text-slate-200 transition-colors">
-                        Davide Arcolini
-                    </span>
+                    <div className="flex flex-col">
+                        <span className="text-base sm:text-lg font-bold font-outfit text-white tracking-tight group-hover:text-slate-200 transition-colors leading-tight">
+                            Davide Arcolini
+                        </span>
+                        <span className="text-xs font-medium text-slate-400 group-hover:text-blue-400 transition-colors">
+                            {content.navbar.subtitle}
+                        </span>
+                    </div>
                 </Link>
 
                 {/* Desktop Nav */}

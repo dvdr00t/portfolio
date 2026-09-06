@@ -1,28 +1,32 @@
 {
     "navbar": {
+        "subtitle": "AI Engineer",
         "about": "About",
         "work": "Work",
         "curriculum": "Curriculum",
         "badges": "Badges",
         "conferences": "Conferences",
-        "contact": "Contact"
+        "contact": "Contacts"
     },
     "hero": {
         "title": "Hi, I'm Davide Arcolini",
-        "subtitle": "Consultant at Liquid Reply, specialized in LLM integration and LLM Agent development. Master of Science in Computer Engineering @ Politecnico di Torino.",
+        "subtitle": "AI Engineer at Liquid Reply, specialized in Multi-Agent Systems, RAG and MCP. Master of Science in Computer Engineering - Cybersecurity at Politecnico di Torino.",
         "dynamicText": [
-            "Welcome, I was waiting for you...",
+            "Wake up, Neo... The Matrix has you",
             "loading coffee.module...",
-            "Tracking your metadata in the cloud.",
-            "sudo make me a sandwich"
+            "Tracking your metadata in the cloud...",
+            "Building MCP tool to hack your PC",
+            "Prompt injection detected. Deploying countermeasures..."
         ],
-        "cta": "Learn more about me"
+        "cta": "Learn more about me",
+        "ctaContact": "Contact me"
     },
     "about": {
         "title": "About Me",
+        "imageCaption": "Reply XChange 2026 - GenAI for ITSM Ticket Validation",
         "description": [
             "Hi! My name is **Davide Arcolini**, but you can call me `dvdr00t` 🤓!",
-            "I'm a Consultant at [**Liquid Reply**](https://www.reply.com/liquid-reply/en/) specialized in **LLM integration for application modernization**. I hold a Master of Science in **Computer Engineering** with a focus on cybersecurity from [**Politecnico di Torino**](https://www.polito.it/). Passionate about security, I've participated in programs like [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), led the [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) with [**Aruba S.p.A**](https://www.aruba.it/academy.aspx), and contributed as a member of [**IEEE-HKN's Mu Nu Chapter**](https://hknpolito.org/)."
+            "I am an AI Engineer at [**Liquid Reply**](https://www.reply.com/liquid-reply/en/) specialized in designing and deploying **Multi-Agent Systems**, **RAG Pipelines** and **MCP Integrations** to production environments. I hold a Master of Science in **Computer Engineering** with a focus on cybersecurity from [**Politecnico di Torino**](https://www.polito.it/). Passionate about security, I've participated in programs like [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), led the [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) with [**Aruba S.p.A**](https://www.aruba.it/academy.aspx), and contributed in leading and presenting tech events for [**IEEE-HKN**](https://hknpolito.org/)."
         ],
         "cta": "See what I've built",
         "ctaCurriculum": "See my curriculum",
@@ -51,10 +55,40 @@
         "cta": "Get in touch"
     },
     "contact": {
-        "title": "Contact",
-        "description": "If you'd like to collaborate, chat or hire me — drop me a line:",
+        "title": "Contacts",
+        "description": "Open to discussing new career opportunities, technical consulting engagements, and collaboration requests. Feel free to reach out through any of the channels below.",
         "email": "davidearcolini.dev@gmail.com",
+        "cards": [
+            {
+                "type": "email",
+                "label": "Email",
+                "value": "davidearcolini.dev@gmail.com",
+                "url": "mailto:davidearcolini.dev@gmail.com"
+            },
+            {
+                "type": "linkedin",
+                "label": "LinkedIn",
+                "value": "linkedin.com/in/davidearcolini",
+                "url": "https://www.linkedin.com/in/davidearcolini/"
+            },
+            {
+                "type": "github",
+                "label": "GitHub",
+                "value": "github.com/dvdr00t",
+                "url": "https://github.com/dvdr00t"
+            },
+            {
+                "type": "location",
+                "label": "Location",
+                "value": "Turin, (TO), Italy",
+                "url": null
+            }
+        ],
         "socials": [
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/davidearcolini/"
+            },
             {
                 "name": "GitHub",
                 "url": "https://github.com/dvdr00t"

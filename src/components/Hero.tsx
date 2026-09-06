@@ -53,13 +53,21 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
+                        className="flex flex-wrap items-center justify-center md:justify-start gap-4"
                     >
                         <Link
                             href="#about"
-                            className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-white text-slate-950 rounded-full font-semibold text-sm md:text-base hover:bg-slate-200 transition-colors duration-300 group"
+                            className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-white text-slate-950 rounded-full font-semibold text-sm md:text-base hover:bg-slate-200 transition-colors duration-300 group shadow-sm"
                         >
                             {hero.cta}
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                        <Link
+                            href="#contact"
+                            className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white rounded-full font-semibold text-sm md:text-base border border-slate-700/60 hover:border-slate-500 transition-all duration-300 group shadow-sm backdrop-blur-sm"
+                        >
+                            {hero.ctaContact || 'Contact me'}
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform text-slate-400 group-hover:text-white" />
                         </Link>
                     </motion.div>
                 </div>
