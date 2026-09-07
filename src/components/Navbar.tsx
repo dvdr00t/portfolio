@@ -28,7 +28,9 @@ export default function Navbar() {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
         };
+
         window.addEventListener('scroll', handleScroll);
+
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -40,10 +42,14 @@ export default function Navbar() {
         <nav
             className={clsx(
                 'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent',
-                scrolled ? 'bg-slate-950/80 backdrop-blur-md border-slate-800/50 py-4' : 'bg-transparent py-6'
+                scrolled
+                    ? 'bg-slate-950/80 backdrop-blur-md border-slate-800/50 py-4'
+                    : 'bg-transparent py-6'
             )}
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
+                
+                {/* Profile + Desktop CV */}
                 <div className="flex items-center gap-3 sm:gap-4">
                     <Link href="/" className="flex items-center gap-3 group">
                         <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-slate-700/50 group-hover:border-slate-500 transition-colors shrink-0">
@@ -54,15 +60,19 @@ export default function Navbar() {
                                 className="object-cover"
                             />
                         </div>
+
                         <div className="hidden sm:flex flex-col">
                             <span className="text-base sm:text-lg font-bold font-outfit text-white tracking-tight group-hover:text-slate-200 transition-colors leading-tight">
                                 Davide Arcolini
                             </span>
+
                             <span className="text-xs font-medium text-slate-400 group-hover:text-blue-400 transition-colors">
                                 {content.navbar.subtitle}
                             </span>
                         </div>
                     </Link>
+
+                    {/* Desktop CV */}
                     <a
                         href="/cv.pdf"
                         download
@@ -93,36 +103,77 @@ export default function Navbar() {
                         <Languages className="w-3.5 h-3.5" />
                         <span>{language}</span>
                     </button>
+
                     <button
                         onClick={toggleTheme}
                         className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-slate-800/50 text-slate-300 transition-all hover:border-slate-600 hover:bg-slate-800"
-                        title={theme === 'dark' ? content.navbar.lightMode : content.navbar.darkMode}
-                        aria-label={theme === 'dark' ? content.navbar.lightMode : content.navbar.darkMode}
+                        title={
+                            theme === 'dark'
+                                ? content.navbar.lightMode
+                                : content.navbar.darkMode
+                        }
+                        aria-label={
+                            theme === 'dark'
+                                ? content.navbar.lightMode
+                                : content.navbar.darkMode
+                        }
                     >
-                        {theme === 'dark' ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
+                        {theme === 'dark' ? (
+                            <Sun className="h-3.5 w-3.5" />
+                        ) : (
+                            <Moon className="h-3.5 w-3.5" />
+                        )}
                     </button>
                 </div>
 
-                {/* Mobile Menu Button & Language */}
-                <div className="md:hidden flex items-center gap-4">
+                {/* Mobile Controls */}
+                <div className="md:hidden flex items-center gap-3">
+                    
+                    {/* Mobile CV */}
+                    <a
+                        href="/cv.pdf"
+                        download
+                        className="flex items-center gap-1.5 rounded-full border border-slate-700/70 bg-slate-800/50 px-3 py-1.5 text-xs font-semibold text-slate-300 hover:bg-slate-800 hover:border-slate-600 transition-all"
+                    >
+                        <Download className="h-3.5 w-3.5" />
+                        {content.navbar.cv}
+                    </a>
+
+                    {/* Language */}
                     <button
                         onClick={toggleLanguage}
                         className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 transition-all text-xs font-semibold uppercase tracking-wider text-slate-300"
                     >
                         <span>{language}</span>
                     </button>
+
+                    {/* Theme */}
                     <button
                         onClick={toggleTheme}
                         className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-slate-800/50 text-slate-300 transition-all"
-                        title={theme === 'dark' ? content.navbar.lightMode : content.navbar.darkMode}
-                        aria-label={theme === 'dark' ? content.navbar.lightMode : content.navbar.darkMode}
+                        title={
+                            theme === 'dark'
+                                ? content.navbar.lightMode
+                                : content.navbar.darkMode
+                        }
+                        aria-label={
+                            theme === 'dark'
+                                ? content.navbar.lightMode
+                                : content.navbar.darkMode
+                        }
                     >
-                        {theme === 'dark' ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
+                        {theme === 'dark' ? (
+                            <Sun className="h-3.5 w-3.5" />
+                        ) : (
+                            <Moon className="h-3.5 w-3.5" />
+                        )}
                     </button>
 
+                    {/* Menu */}
                     <button
                         className="text-slate-300"
                         onClick={() => setIsOpen(!isOpen)}
+                        aria-label={isOpen ? 'Close menu' : 'Open menu'}
                     >
                         {isOpen ? <X /> : <Menu />}
                     </button>
@@ -139,14 +190,6 @@ export default function Navbar() {
                         className="md:hidden bg-slate-950/95 backdrop-blur-lg border-b border-slate-800"
                     >
                         <div className="flex flex-col p-6 space-y-4">
-                            <a
-                                href="/cv.pdf"
-                                download
-                                className="flex w-fit items-center gap-2 rounded-full border border-slate-700/70 bg-slate-800/50 px-3 py-2 text-sm font-semibold text-slate-300 hover:bg-slate-800 hover:border-slate-600 transition-all"
-                            >
-                                <Download className="h-4 w-4" />
-                                {content.navbar.cv}
-                            </a>
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}
