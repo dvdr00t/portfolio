@@ -63,14 +63,14 @@ export default function Navbar() {
                             </span>
                         </div>
                     </Link>
-                    <span
-                        aria-disabled="true"
-                        title={content.navbar.cvUnavailable}
-                        className="hidden lg:flex items-center gap-1.5 rounded-full border border-slate-700/70 bg-slate-800/50 px-3 py-1.5 text-xs font-semibold text-slate-400 cursor-not-allowed"
+                    <a
+                        href="/cv.pdf"
+                        download
+                        className="hidden lg:flex items-center gap-1.5 rounded-full border border-slate-700/70 bg-slate-800/50 px-3 py-1.5 text-xs font-semibold text-slate-300 hover:bg-slate-800 hover:border-slate-600 transition-all"
                     >
                         <Download className="h-3.5 w-3.5" />
                         {content.navbar.cv}
-                    </span>
+                    </a>
                 </div>
 
                 {/* Desktop Nav */}
@@ -139,14 +139,14 @@ export default function Navbar() {
                         className="md:hidden bg-slate-950/95 backdrop-blur-lg border-b border-slate-800"
                     >
                         <div className="flex flex-col p-6 space-y-4">
-                            <span
-                                aria-disabled="true"
-                                title={content.navbar.cvUnavailable}
-                                className="flex w-fit items-center gap-2 rounded-full border border-slate-700/70 bg-slate-800/50 px-3 py-2 text-sm font-semibold text-slate-400 cursor-not-allowed"
+                            <a
+                                href="/cv.pdf"
+                                download
+                                className="flex w-fit items-center gap-2 rounded-full border border-slate-700/70 bg-slate-800/50 px-3 py-2 text-sm font-semibold text-slate-300 hover:bg-slate-800 hover:border-slate-600 transition-all"
                             >
                                 <Download className="h-4 w-4" />
                                 {content.navbar.cv}
-                            </span>
+                            </a>
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}
