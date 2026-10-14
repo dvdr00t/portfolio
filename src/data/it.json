@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "subtitle": "AI Engineer",
+        "subtitle": "Senior AI Engineer",
         "about": "Chi Sono",
         "curriculum": "Curriculum",
         "conferences": "Conferenze",
@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Ciao, sono Davide Arcolini",
-        "subtitle": "AI Engineer presso Liquid Reply, specializzato in Sistemi Multi-Agente, RAG e MCP. Laurea Magistrale in Ingegneria Informatica - Cybersecurity presso il Politecnico di Torino.",
+        "subtitle": "Senior AI Engineer presso Liquid Reply, dove gestisco un team di Forward Deployed Engineers e realizzo soluzioni AI per i clienti. Specializzato in Sistemi Multi-Agente, RAG e MCP.",
         "dynamicText": [
             "Wake up, Neo... The Matrix has you",
             "loading coffee.module...",
@@ -30,7 +30,7 @@
         "imageCaption": "Reply XChange 2026 - GenAI for ITSM Ticket Validation",
         "description": [
             "Ciao! Mi chiamo **Davide Arcolini**, ma puoi chiamarmi `dvdr00t` 🤓!",
-            "Sono un AI Engineer presso [**Liquid Reply**](https://www.reply.com/liquid-reply/it/) specializzato nella progettazione e nel deployment di **Sistemi Multi-Agente**, **Pipeline RAG** e **Integrazioni MCP** in ambienti di produzione. Ho conseguito la Laurea Magistrale in **Ingegneria Informatica** con specializzazione in cybersecurity presso il [**Politecnico di Torino**](https://www.polito.it/). Appassionato di sicurezza, ho partecipato a programmi come [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), guidato il progetto [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) con [**Aruba S.p.A**](https://www.aruba.it/academy.aspx), e contribuito guidando e presentando eventi tech per [**IEEE-HKN**](https://hknpolito.org/)."
+            "Sono **Senior AI Engineer** presso [**Liquid Reply**](https://www.reply.com/liquid-reply/it/), dove gestisco un team di **Forward Deployed Engineers (FDE)**. Collaboro con i clienti per trasformare le loro esigenze in soluzioni AI pronte per la produzione, dalla discovery tecnica e prototipazione fino all'architettura e al deployment. Mi occupo di progettare e scalare **Sistemi Multi-Agente**, **Pipeline RAG** e **Integrazioni MCP**. Ho conseguito la Laurea Magistrale in **Ingegneria Informatica** con specializzazione in cybersecurity presso il [**Politecnico di Torino**](https://www.polito.it/). Appassionato di sicurezza, ho partecipato a programmi come [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), guidato il progetto [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) con [**Aruba S.p.A**](https://www.aruba.it/academy.aspx), e contribuito guidando e presentando eventi tech per [**IEEE-HKN**](https://hknpolito.org/)."
         ],
         "cta": "Guarda cosa ho costruito",
         "ctaCurriculum": "Vedi il mio curriculum",
@@ -113,16 +113,26 @@
                         "icon": "work",
                         "roles": [
                             {
-              "title": "AI Engineer e Consulente IT",
+              "title": "Senior AI Engineer",
               "date": "Dicembre 2023 - Presente",
-              "description": "Progettazione, sviluppo e deployment in produzione di Sistemi Multi-Agente, pipeline RAG e integrazioni MCP. Focalizzato sull'ottimizzazione e la scalabilità degli LLM.",
+              "description": "Gestisco un team di Forward Deployed Engineers (FDE) e collaboro con i clienti per trasformare le esigenze di business in soluzioni AI pronte per la produzione. Mi occupo di discovery tecnica, raccolta dei requisiti, solution architecture, rapid prototyping e deployment, oltre a progettare, sviluppare e scalare Sistemi Multi-Agente, pipeline RAG e integrazioni MCP.",
               "skills": [
                 "Large Language Models (LLM)",
-                "Langchain/Langgraph",
+                "LangChain/LangGraph",
                 "Sistemi Multi-Agente",
                 "Retrieval-Augmented Generation (RAG)",
                 "Integrazione MCP",
-                "Python"
+                "Python",
+                "Forward Deployed Engineer (FDE)",
+                "People Management",
+                "Team Leadership",
+                "Customer Discovery & Requirements Gathering",
+                "Customer-Facing Engineering",
+                "Stakeholder Management",
+                "Solution Architecture",
+                "Rapid Prototyping",
+                "Production Deployment",
+                "Cross-Functional Collaboration"
                                 ]
                             },
                             {

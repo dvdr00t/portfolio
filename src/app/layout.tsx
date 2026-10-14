@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "Davide Arcolini | AI Engineer",
-  description: "Portfolio of Davide Arcolini, AI Engineer at Liquid Reply specializing in Multi-Agent Systems, RAG and MCP.",
+  title: "Davide Arcolini | Senior AI Engineer",
+  description: "Portfolio of Davide Arcolini, Senior AI Engineer and team lead for Forward Deployed Engineers at Liquid Reply, specializing in customer-facing AI solutions, Multi-Agent Systems, RAG and MCP.",
 };
 
 export default function RootLayout({

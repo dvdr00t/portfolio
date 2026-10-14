@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "subtitle": "AI Engineer",
+        "subtitle": "Senior AI Engineer",
         "about": "About",
         "curriculum": "Curriculum",
         "conferences": "Conferences",
@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Hi, I'm Davide Arcolini",
-        "subtitle": "AI Engineer at Liquid Reply, specialized in Multi-Agent Systems, RAG and MCP. Master of Science in Computer Engineering - Cybersecurity at Politecnico di Torino.",
+        "subtitle": "Senior AI Engineer at Liquid Reply, managing a team of Forward Deployed Engineers and delivering customer-facing AI solutions. Specialized in Multi-Agent Systems, RAG and MCP.",
         "dynamicText": [
             "Wake up, Neo... The Matrix has you",
             "loading coffee.module...",
@@ -30,7 +30,7 @@
         "imageCaption": "Reply XChange 2026 - GenAI for ITSM Ticket Validation",
         "description": [
             "Hi! My name is **Davide Arcolini**, but you can call me `dvdr00t` 🤓!",
-            "I am an AI Engineer at [**Liquid Reply**](https://www.reply.com/liquid-reply/en/) specialized in designing and deploying **Multi-Agent Systems**, **RAG Pipelines** and **MCP Integrations** to production environments. I hold a Master of Science in **Computer Engineering** with a focus on cybersecurity from [**Politecnico di Torino**](https://www.polito.it/). Passionate about security, I've participated in programs like [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), led the [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) with [**Aruba S.p.A**](https://www.aruba.it/academy.aspx), and contributed in leading and presenting tech events for [**IEEE-HKN**](https://hknpolito.org/)."
+            "I am a **Senior AI Engineer** at [**Liquid Reply**](https://www.reply.com/liquid-reply/en/), where I manage a team of **Forward Deployed Engineers (FDEs)**. I partner with customers to turn their needs into production-ready AI solutions, from technical discovery and prototyping through architecture and deployment. My work includes designing and scaling **Multi-Agent Systems**, **RAG Pipelines** and **MCP Integrations**. I hold a Master of Science in **Computer Engineering** with a focus on cybersecurity from [**Politecnico di Torino**](https://www.polito.it/). Passionate about security, I've participated in programs like [**CyberChallenge.IT**](https://bestr.it/award/show/rLlb917mQk-v6w0rGCpO8Q), led the [**Challenge@PoliTo**](https://bestr.it/award/show/8MiJNQU_R9uGIwqmioc4Uw) with [**Aruba S.p.A**](https://www.aruba.it/academy.aspx), and contributed in leading and presenting tech events for [**IEEE-HKN**](https://hknpolito.org/)."
         ],
         "cta": "See what I've built",
         "ctaCurriculum": "See my curriculum",
@@ -113,16 +113,26 @@
                         "icon": "work",
                         "roles": [
                             {
-                                "title": "AI Engineer & IT Consultant",
+                                "title": "Senior AI Engineer",
                                 "date": "December 2023 - Present",
-                                "description": "Designing, building and deploying Multi-Agent Systems, RAG Pipelines and MCP integration to production. Focused on optimization and scalability of LLMs.",
+                                "description": "Manage a team of Forward Deployed Engineers (FDEs), partnering with customers to turn business needs into production-ready AI solutions. Drive technical discovery, requirements gathering, solution architecture, rapid prototyping and deployment while designing, building and scaling Multi-Agent Systems, RAG pipelines and MCP integrations.",
                                 "skills": [
                                     "Large Language Models (LLM)",
-                                    "Langchain/Langgraph",
+                                    "LangChain/LangGraph",
                                     "Multi-Agent Systems",
                                     "Retrieval-Augmented Generation (RAG)",
                                     "MCP Integration",
-                                    "Python"
+                                    "Python",
+                                    "Forward Deployed Engineer (FDE)",
+                                    "People Management",
+                                    "Team Leadership",
+                                    "Customer Discovery & Requirements Gathering",
+                                    "Customer-Facing Engineering",
+                                    "Stakeholder Management",
+                                    "Solution Architecture",
+                                    "Rapid Prototyping",
+                                    "Production Deployment",
+                                    "Cross-Functional Collaboration"
                                 ]
                             },
                             {
