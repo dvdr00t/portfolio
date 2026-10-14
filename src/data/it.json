@@ -113,32 +113,59 @@
                         "icon": "work",
                         "roles": [
                             {
-              "title": "Senior AI Engineer",
-              "date": "Dicembre 2023 - Presente",
-              "description": "Gestisco un team di Forward Deployed Engineers (FDE) e collaboro con i clienti per trasformare le esigenze di business in soluzioni AI pronte per la produzione. Mi occupo di discovery tecnica, raccolta dei requisiti, solution architecture, rapid prototyping e deployment, oltre a progettare, sviluppare e scalare Sistemi Multi-Agente, pipeline RAG e integrazioni MCP.",
-              "skills": [
-                "Large Language Models (LLM)",
-                "LangChain/LangGraph",
-                "Sistemi Multi-Agente",
-                "Retrieval-Augmented Generation (RAG)",
-                "Integrazione MCP",
-                "Python",
-                "Forward Deployed Engineer (FDE)",
-                "People Management",
-                "Team Leadership",
-                "Customer Discovery & Requirements Gathering",
-                "Customer-Facing Engineering",
-                "Stakeholder Management",
-                "Solution Architecture",
-                "Rapid Prototyping",
-                "Production Deployment",
-                "Cross-Functional Collaboration"
+                                "title": "Senior AI Engineer",
+                                "description": "Gestisco un team di Forward Deployed Engineers (FDE) e collaboro con i clienti per trasformare le esigenze di business in soluzioni AI pronte per la produzione. Mi occupo di discovery tecnica, raccolta dei requisiti, solution architecture, rapid prototyping e deployment, oltre a progettare, sviluppare e scalare Sistemi Multi-Agente, pipeline RAG e integrazioni MCP.",
+                                "skills": [
+                                    "Large Language Models (LLM)",
+                                    "LangChain/LangGraph",
+                                    "Sistemi Multi-Agente",
+                                    "Retrieval-Augmented Generation (RAG)",
+                                    "Integrazione MCP",
+                                    "Python",
+                                    "Forward Deployed Engineer (FDE)",
+                                    "People Management",
+                                    "Team Leadership",
+                                    "Customer Discovery & Requirements Gathering",
+                                    "Customer-Facing Engineering",
+                                    "Stakeholder Management",
+                                    "Solution Architecture",
+                                    "Rapid Prototyping",
+                                    "Production Deployment",
+                                    "Cross-Functional Collaboration"
                                 ]
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1-2",
+                        "organization": "Liquid Reply",
+                        "url": "https://liquidreply.net/en/",
+                        "icon": "work",
+                        "roles": [
+                            {
+                                "title": "AI Engineer",
+                                "description": "Ho progettato, sviluppato e portato in produzione Sistemi Multi-Agente, pipeline RAG e integrazioni MCP, con attenzione all'ottimizzazione e alla scalabilità degli LLM.",
+                                "skills": [
+                                    "Large Language Models (LLM)",
+                                    "LangChain/LangGraph",
+                                    "Sistemi Multi-Agente",
+                                    "Retrieval-Augmented Generation (RAG)",
+                                    "Integrazione MCP",
+                                    "Python"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1-3",
+                        "organization": "Liquid Reply",
+                        "url": "https://liquidreply.net/en/",
+                        "icon": "work",
+                        "roles": [
                             {
                                 "title": "Studente Tesista Magistrale",
                                 "date": "Aprile 2023 - Dicembre 2023",
-              "description": "Ho lavorato a un progetto di tesi all'avanguardia incentrato sulla sicurezza delle API e sul Microgateway Infrastructural Pattern adottando Kong API Gateway.",
+                                "description": "Ho lavorato a un progetto di tesi all'avanguardia incentrato sulla sicurezza delle API e sul Microgateway Infrastructural Pattern adottando Kong API Gateway.",
                                 "skills": [
                                     "Postman",
                                     "Keycloak",

@@ -122,10 +122,12 @@ function CurriculumCard({ item }: { item: any }) {
                                 )}
                             </div>
 
-                            <div className="flex items-center gap-2 text-sm text-blue-400 font-mono mb-3">
-                                <Calendar className="w-3.5 h-3.5" />
-                                <span>{role.date}</span>
-                            </div>
+                            {role.date && (
+                                <div className="flex items-center gap-2 text-sm text-blue-400 font-mono mb-3">
+                                    <Calendar className="w-3.5 h-3.5" />
+                                    <span>{role.date}</span>
+                                </div>
+                            )}
 
                             <p className="text-slate-400 leading-relaxed text-sm mb-4 text-justify">
                                 {role.description}
