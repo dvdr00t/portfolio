@@ -114,6 +114,7 @@
                         "roles": [
                             {
                                 "title": "Senior AI Engineer",
+                                "date": "October 2, 2026 - Present",
                                 "description": "Manage a team of Forward Deployed Engineers (FDEs), partnering with customers to turn business needs into production-ready AI solutions. Drive technical discovery, requirements gathering, solution architecture, rapid prototyping and deployment while designing, building and scaling Multi-Agent Systems, RAG pipelines and MCP integrations.",
                                 "skills": [
                                     "Large Language Models (LLM)",
@@ -144,6 +145,7 @@
                         "roles": [
                             {
                                 "title": "AI Engineer",
+                                "date": "December 2023 - October 1, 2026",
                                 "description": "Designed, built and deployed Multi-Agent Systems, RAG pipelines and MCP integrations to production, focusing on LLM optimization and scalability.",
                                 "skills": [
                                     "Large Language Models (LLM)",
